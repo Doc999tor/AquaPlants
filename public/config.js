@@ -13,7 +13,7 @@ const config = {
             photo: ['photo1', 'photo2'],
             description: 'Plant description',
             price: 10,
-            discount_price: '5/null',
+            discount_price: 5,
             qty_stock: 5 // 0 is not in stock
           },
           {
@@ -22,7 +22,7 @@ const config = {
             photo: ['photo2', 'photo3'],
             description: 'Plant description',
             price: 10,
-            discount_price: '5/null',
+            discount_price: 0,
             qty_stock: 5 // 0 is not in stock
           },
           {
@@ -31,7 +31,7 @@ const config = {
             photo: ['photo3', 'photo4'],
             description: 'Plant description',
             price: 10,
-            discount_price: '5/null',
+            discount_price: 10,
             qty_stock: 5 // 0 is not in stock
           },
           {
@@ -40,8 +40,8 @@ const config = {
             photo: ['photo4', 'photo1'],
             description: 'Plant description',
             price: 10,
-            discount_price: '5/null',
-            qty_stock: 5 // 0 is not in stock
+            discount_price: 5,
+            qty_stock: 0 // 0 is not in stock
           },
           {
             id: 8,
@@ -49,7 +49,7 @@ const config = {
             photo: ['photo1', 'photo2'],
             description: 'Plant description',
             price: 10,
-            discount_price: '5/null',
+            discount_price: 5,
             qty_stock: 5 // 0 is not in stock
           },
           {
@@ -67,7 +67,7 @@ const config = {
             photo: ['photo1', 'photo2'],
             description: 'Plant description',
             price: 10,
-            discount_price: '5/null',
+            discount_price: 5,
             qty_stock: 5 // 0 is not in stock
           },
         ]
@@ -82,7 +82,7 @@ const config = {
             photo: ['photo1', 'photo2'],
             description: 'Plant description',
             price: 10,
-            discount_price: '5/null',
+            discount_price: 5,
             qty_stock: 5 // 0 is not in stock
           },
           {
@@ -91,7 +91,7 @@ const config = {
             photo: ['photo2', 'photo3'],
             description: 'Plant description',
             price: 10,
-            discount_price: '5/null',
+            discount_price: 5,
             qty_stock: 5 // 0 is not in stock
           },
           {
@@ -100,7 +100,7 @@ const config = {
             photo: ['photo3', 'photo4'],
             description: 'Plant description',
             price: 10,
-            discount_price: '5/null',
+            discount_price: 5,
             qty_stock: 5 // 0 is not in stock
           },
           {
@@ -109,7 +109,7 @@ const config = {
             photo: ['photo4', 'photo1'],
             description: 'Plant description',
             price: 10,
-            discount_price: '5/null',
+            discount_price: 5,
             qty_stock: 5 // 0 is not in stock
           },
           {
@@ -118,7 +118,7 @@ const config = {
             photo: ['photo1', 'photo2'],
             description: 'Plant description',
             price: 10,
-            discount_price: '5/null',
+            discount_price: 5,
             qty_stock: 5 // 0 is not in stock
           },
           {
@@ -127,7 +127,7 @@ const config = {
             photo: ['photo2', 'photo3'],
             description: 'Plant description',
             price: 10,
-            discount_price: '5/null',
+            discount_price: 5,
             qty_stock: 5 // 0 is not in stock
           },
           {
@@ -136,7 +136,7 @@ const config = {
             photo: ['photo1', 'photo2'],
             description: 'Plant description',
             price: 10,
-            discount_price: '5/null',
+            discount_price: 5,
             qty_stock: 5 // 0 is not in stock
           },
         ]
@@ -155,6 +155,9 @@ const config = {
     site_subtitle: 'And you will receive it right to your home',
     search_placeholder: 'Search',
     bestsellers_label: 'Bestsellers',
+    in_stock_label: 'In stock',
+    out_of_stock_label: 'Out of stock',
+    add_to_card_label: 'Add to cart',
     copy_rights: '© {year} all rights reserved.'
   }
 };

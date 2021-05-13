@@ -35,23 +35,4 @@
     justify-content: flex-start;
     flex-wrap: wrap;
 }
-.Item {
-    width: 25%;
-    padding: 0 1rem;
-}
-.Item picture {
-    display: flex;
-    border-radius: 0.625rem;
-    overflow: hidden;
-}
-.Item figcaption {
-    font-size: 1rem;
-    padding: 1rem 0;
-    font-weight: 500;
-    color: #222;
-}
-.Desc {
-    padding-bottom: 3rem;
-}
-.Item picture *:not(img) { height: 0; width: 0; }
-.Item picture img { width: 100%; }
+

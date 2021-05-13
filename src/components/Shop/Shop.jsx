@@ -1,3 +1,5 @@
+import Item from './Item/Item';
+
 import s from './Shop.module.css';
 
 const Shop = () => {
@@ -12,20 +14,7 @@ const Shop = () => {
             <h3 className={s.Category}>{i?.title}</h3>
             <p className={s.About}>{i?.sub_title}</p>
             <div className={s.Products}>
-              {i?.plants?.map(i => {
-                return (
-                  <div key={i.id} className={s.Item}>
-                    <figure>
-                      <picture>
-                        <source className={s.Plant_pic} srcSet={config.urls.plants_pic + i.photo[0] + '.webp'} type='image/webp' loading='lazy' />
-                        <img className={s.Plant_pic} src={config.urls.plants_pic + i.photo[0] + '.jpg'} alt='makeup' loading='lazy' />
-                      </picture>
-                      <figcaption>{i.name}</figcaption>
-                    </figure>
-                    <p className={s.Desc}>{i.description}</p>
-                  </div>
-                );}
-              )}
+              {i?.plants?.map(i => <Item key={i.id} i={i} />)}
             </div>
           </section>
         ))}
