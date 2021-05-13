@@ -1,0 +1,57 @@
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.375rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+.Title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+.Body {
+    width: 70%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+.Category {
+    padding: 1.875rem 0 1rem;
+    padding-inline-start: 1rem;
+    font-size: 1.875rem;
+    font-weight: 500;
+    color: #222;
+}
+.About {
+    font-size: 1rem;
+    white-space: pre-wrap;
+    color: #222;
+    padding-bottom: 1.875rem;
+    padding-inline-start: 1rem;
+}
+.Products {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.Item {
+    width: 25%;
+    padding: 0 1rem;
+}
+.Item picture {
+    display: flex;
+    border-radius: 0.625rem;
+    overflow: hidden;
+}
+.Item figcaption {
+    font-size: 1rem;
+    padding: 1rem 0;
+    font-weight: 500;
+    color: #222;
+}
+.Desc {
+    padding-bottom: 3rem;
+}
+.Item picture *:not(img) { height: 0; width: 0; }
+.Item picture img { width: 100%; }

@@ -1,0 +1,21 @@
+.Footer {
+    border-top: 1px solid #e6e6e6;
+}
+.Wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    height: 9.75rem;
+    margin: 0 auto;
+}
+.Logo {
+    width: 8.5rem;
+}
+.C_r small {
+    font-size: 0.875rem;
+    color: #252525;
+}
+.Pay {
+    height: 2rem;
+}
