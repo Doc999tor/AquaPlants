@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from './components/Header/Header';
 import Shop from './components/Shop/Shop';
 import Footer from './components/Footer/Footer';
@@ -8,7 +8,18 @@ import s from './styles.module.css';
 function App() {
   const [showCart, setShowCart] = useState(false);
   const [cart, setCart] = useState([]);
-
+  const [sum, setSum] = useState(0);
+  useEffect(() => {
+    if (cart.length) {
+      const total = cart?.reduce((total, i) => {
+        const price = i.discount_price <= i.price
+          ? i.discount_price == 0 ? 0 : i.discount_price
+          : i.price;
+        return Number(total) + price;
+      }, 0);
+      setSum(total);
+    }
+  }, [cart]);
   const handleShowCart = () => {
     if (!showCart) {
       setShowCart(true);
@@ -19,10 +30,11 @@ function App() {
     if (obj.id) return;
     setCart(prevState => [...prevState, item]);
   };
+  const handleRemoveFromCart = id => setCart(prevState => prevState.filter(i => i.id != id));
   const handleHideCart = () => setShowCart(false);
   return (
     <div className={s.App}>
-      <Header onShowCart={handleShowCart} cart={cart} />
+      <Header onShowCart={handleShowCart} cart={cart} sum={sum} />
       <main>
         <div className={s.Aqua} style={{backgroundImage: `url('${config.urls.media}aquarium.png')`}}>
           <div className={s.Texts}>
@@ -32,7 +44,7 @@ function App() {
         </div>
         <Shop onAddToCart={handleAddToCart} />
       </main>
-      {showCart && <Cart onHideCart={handleHideCart} cart={cart} />}
+      {showCart && <Cart onHideCart={handleHideCart} cart={cart} sum={sum} onRemoveFromCart={handleRemoveFromCart} />}
       <Footer />
     </div>
   );

@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 
 import s from './Cart.module.css';
 
-const Cart = ({ onHideCart, cart = [] }) => {
+const Cart = ({ onHideCart, cart = [], sum, onRemoveFromCart }) => {
   const handleClosePopup = backFlag => {
     backFlag === 'off' ? false : window.history.back();
     onHideCart();
@@ -22,11 +22,11 @@ const Cart = ({ onHideCart, cart = [] }) => {
   }, []);
   return (
     <div className={s.Cart}>
-      <Header cartMode cart={cart} />
+      <Header cartMode cart={cart} sum={sum} />
       <div className={s.Body}>
         <h2 className={s.Title}>{config.translations.cart_title}</h2>
         <ul className={s.List}>
-          {cart?.map(i => <CartItem key={i.id} i={i} />)}
+          {cart?.map(i => <CartItem key={i.id} i={i} onRemoveFromCart={onRemoveFromCart} />)}
         </ul>
       </div>
       <Footer />

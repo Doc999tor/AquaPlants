@@ -1,9 +1,9 @@
 import s from './CartItem.module.css';
 
-const CartItem = ({ i }) => {
+const CartItem = ({ i, onRemoveFromCart }) => {
   return (
     <li className={s.Item}>
-      <button type='button' className={s.Btn}><img src={config.urls.media + 'close.svg'} alt='' /></button>
+      <button type='button' className={s.Btn} onClick={() => onRemoveFromCart(i.id)}><img src={config.urls.media + 'close.svg'} alt='' /></button>
       <div className={s.Price_wrap}>
         <span className={s.Discount}>{
           i.discount_price <= i.price

@@ -1,12 +1,12 @@
 import s from './Header.module.css';
 
-const Header = ({ cartMode = false, onShowCart, cart = [] }) => {
+const Header = ({ cartMode = false, onShowCart, cart = [], sum }) => {
   return (
     <header className={s.Header + (cartMode ? ` ${s.Cart_header}` : '')}>
       <div className={s.Cont}>
         <div className={s.Group}>
           <div className={s.Cart} onClick={onShowCart}>
-            <span className={s.Cart_value}>1234{config.currency}</span>
+            <span className={s.Cart_value}>{sum}{config.currency}</span>
             <span className={s.Circle}>
               <img src={`${config.urls.media}shopping-bag.svg`} alt='' />
               {cart?.length > 0 && <span className={s.Cart_count}>{cart?.length}</span>}
