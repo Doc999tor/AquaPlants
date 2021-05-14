@@ -1,6 +1,6 @@
 import s from './Item.module.css';
 
-const Item = ({i}) => {
+const Item = ({ i, onAddToCart }) => {
   return(
     <div className={s.Item}>
       <figure>
@@ -29,7 +29,7 @@ const Item = ({i}) => {
           </span>
         </div>
       </div>
-      <button type='button' className={s.Add_btn + (i.qty_stock == 0 ? ' ' + s.Hidden : '')} onClick={() => console.log('asdasd')}>{config.translations.add_to_card_label}</button>
+      <button type='button' className={s.Add_btn + (i.qty_stock == 0 ? ' ' + s.Hidden : '')} onClick={() => onAddToCart(i)}>{config.translations.add_to_card_label}</button>
     </div>
   );
 };

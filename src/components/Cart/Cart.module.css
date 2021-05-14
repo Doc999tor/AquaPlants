@@ -7,12 +7,14 @@
     top: 0;
     left: 0;
     width: 100%;
+    min-height: 100vh;
+    overflow: auto;
+    height: 100%;
 }
 .Body {
     padding-top: 13rem;
     flex-grow: 1;
     width: 50%;
-    height: 100%;
     margin: 0 auto;
 }
 .Title {
@@ -22,6 +24,7 @@
     padding-bottom: 1.875rem;
 }
 /*.List {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
+/*    !*display: flex;*!*/
+/*    !*flex-direction: column;*!*/
+/*    margin-bottom: 9.75rem;*/
 /*}*/

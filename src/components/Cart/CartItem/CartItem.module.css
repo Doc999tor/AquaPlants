@@ -6,6 +6,9 @@
     padding: 2rem 0;
     border-bottom: 1px solid #e6e6e6;
 }
+.Item:last-child {
+    border: none
+}
 .Item figure {
     display: flex;
     align-items: center;
