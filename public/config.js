@@ -11,7 +11,7 @@ const config = {
             id: 5,
             name: 'Plant name',
             photo: ['photo1', 'photo2'],
-            description: 'Plant description',
+            description: 'Stems Per Pot: 1Common Name: DownoiPlant Use: Foreground Difficulty Level: Medium Light Demand: Medium Co2 Demand: Medium Fertilizer Demand: Medium',
             price: 10,
             discount_price: 5,
             qty_stock: 5 // 0 is not in stock
