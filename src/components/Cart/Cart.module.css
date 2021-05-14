@@ -1,0 +1,27 @@
+.Cart {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.Body {
+    padding-top: 13rem;
+    flex-grow: 1;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+}
+.Title {
+    color: #222222;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1.875rem;
+}
+/*.List {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/

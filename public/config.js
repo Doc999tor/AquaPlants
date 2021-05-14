@@ -158,6 +158,8 @@ const config = {
     in_stock_label: 'In stock',
     out_of_stock_label: 'Out of stock',
     add_to_card_label: 'Add to cart',
+    free_label: 'Free',
+    cart_title: 'Cart',
     copy_rights: '© {year} all rights reserved.'
   }
 };

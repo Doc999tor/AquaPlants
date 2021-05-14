@@ -1,6 +1,7 @@
 import Header from './components/Header/Header';
 import Shop from './components/Shop/Shop';
 import Footer from './components/Footer/Footer';
+import Cart from './components/Cart/Cart';
 import s from './styles.module.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         </div>
         <Shop />
       </main>
+      {/*<Cart />*/}
       <Footer />
     </div>
   );

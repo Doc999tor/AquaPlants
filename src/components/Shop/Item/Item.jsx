@@ -2,7 +2,7 @@ import s from './Item.module.css';
 
 const Item = ({i}) => {
   return(
-    <div key={i.id} className={s.Item}>
+    <div className={s.Item}>
       <figure>
         <picture>
           <source className={s.Plant_pic} srcSet={config.urls.plants_pic + i.photo[0] + '.webp'} type='image/webp' loading='lazy' />
@@ -22,7 +22,11 @@ const Item = ({i}) => {
         </div>
         <div className={s.Price_wrap}>
           {i.price !== i.discount_price && <span className={s.Price}>{i.price + config.currency}</span>}
-          <span className={s.Discount}>{i.discount_price <= i.price ? i.discount_price + config.currency : i.price + config.currency}</span>
+          <span className={s.Discount}>{
+            i.discount_price <= i.price
+              ? i.discount_price == 0 ? config.translations.free_label : i.discount_price + config.currency
+              : i.price + config.currency}
+          </span>
         </div>
       </div>
       <button type='button' className={s.Add_btn + (i.qty_stock == 0 ? ' ' + s.Hidden : '')} onClick={() => console.log('asdasd')}>{config.translations.add_to_card_label}</button>

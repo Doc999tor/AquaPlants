@@ -1,8 +1,8 @@
 import s from './Header.module.css';
 
-const Header = () => {
+const Header = ({ cart = false }) => {
   return (
-    <header className={s.Header}>
+    <header className={s.Header + (cart ? ` ${s.Cart_header}` : '')}>
       <div className={s.Cont}>
         <div className={s.Group}>
           <div className={s.Cart}>
@@ -23,7 +23,7 @@ const Header = () => {
           <label className={s.Search_input}><img src={`${config.urls.media}search.svg`} alt='' />
             <input type='text' placeholder={config.translations.search_placeholder} />
           </label>
-          <a href='#'><img className={s.Logo} src={`${config.urls.media}logo.png`} alt='logo' /></a>
+          <a href='#'><img className={s.Logo} src={`${config.urls.media}${cart ? 'logo-color' : 'logo'}.png`} alt='logo' /></a>
         </div>
       </div>
     </header>
