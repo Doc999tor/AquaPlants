@@ -2,7 +2,7 @@ import Item from './Item/Item';
 
 import s from './Shop.module.css';
 
-const Shop = ({ onAddToCart, itemsId = [] }) => {
+const Shop = ({ onAddToCart, itemsId = [], onIncrementCartItem, onDecrementCartItem }) => {
   return (
     <div className={s.Shop}>
       <div className={s.Header}>
@@ -14,7 +14,7 @@ const Shop = ({ onAddToCart, itemsId = [] }) => {
             <h3 className={s.Category}>{i?.title}</h3>
             <p className={s.About}>{i?.sub_title}</p>
             <div className={s.Products}>
-              {i?.plants?.map(i => <Item onAddToCart={onAddToCart} key={i.id} i={i} itemsId={itemsId} />)}
+              {i?.plants?.map(i => <Item onIncrementCartItem={onIncrementCartItem} onDecrementCartItem={onDecrementCartItem} onAddToCart={onAddToCart} key={i.id} i={i} itemsId={itemsId} />)}
             </div>
           </section>
         ))}

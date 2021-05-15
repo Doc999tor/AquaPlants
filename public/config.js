@@ -161,6 +161,11 @@ const config = {
     added_to_card_label: 'Added to cart',
     free_label: 'Free',
     cart_title: 'Cart',
-    copy_rights: '© {year} all rights reserved.'
+    copy_rights: '© {year} all rights reserved.',
+    delivery_options: {
+      title: 'Delivery Options',
+      min_total_price: 'Total price: {price}',
+      shipping_price: 'Shipping price: {price}',
+    }
   }
 };

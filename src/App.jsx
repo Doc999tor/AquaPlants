@@ -59,7 +59,12 @@ function App() {
             <p className={s.Subtitle}>{config.translations.site_subtitle}</p>
           </div>
         </div>
-        <Shop onAddToCart={handleAddToCart} itemsId={ItemIds} />
+        <Shop
+          onAddToCart={handleAddToCart}
+          onIncrementCartItem={handleIncrementCartItem}
+          onDecrementCartItem={handleDecrementCartItem}
+          itemsId={ItemIds}
+        />
       </main>
       {showCart && (
         <Cart

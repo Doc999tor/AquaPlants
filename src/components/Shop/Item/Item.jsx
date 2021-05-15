@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import s from './Item.module.css';
 
-const Item = ({ i, onAddToCart, itemsId  }) => {
+const Item = ({ i, onAddToCart, itemsId, onDecrementCartItem, onIncrementCartItem  }) => {
   const [amount, setAmount] = useState(1);
   const handleIncrement = () => {
     setAmount(prevState => {
@@ -11,6 +11,7 @@ const Item = ({ i, onAddToCart, itemsId  }) => {
       }
       return prevState + 1;
     });
+    itemsId.includes(i.id) && onIncrementCartItem(i.id);
   };
   const handleDecrement = () => {
     setAmount(prevState => {
@@ -19,6 +20,7 @@ const Item = ({ i, onAddToCart, itemsId  }) => {
       }
       return prevState - 1;
     });
+    itemsId.includes(i.id) && onDecrementCartItem(i.id);
   };
   return(
     <div className={s.Item}>
@@ -35,9 +37,9 @@ const Item = ({ i, onAddToCart, itemsId  }) => {
           {i.qty_stock == 0 ? config.translations.out_of_stock_label : config.translations.in_stock_label}
         </span>
         <div className={s.Controls}>
-          <button type='button' className={s.Btn} onClick={handleIncrement} disabled={itemsId.includes(i.id)}><img src={config.urls.media + 'plus.svg'} alt='' /></button>
+          <button type='button' className={s.Btn} onClick={handleIncrement} ><img src={config.urls.media + 'plus.svg'} alt='' /></button>
           <span className={s.Qty}>{amount}</span>
-          <button type='button' className={s.Btn} onClick={handleDecrement} disabled={itemsId.includes(i.id)}><img src={config.urls.media + 'minus.svg'} alt='' /></button>
+          <button type='button' className={s.Btn} onClick={handleDecrement} ><img src={config.urls.media + 'minus.svg'} alt='' /></button>
         </div>
         <div className={s.Price_wrap}>
           {i.price !== i.discount_price && <span className={s.Price}>{i.price + config.currency}</span>}

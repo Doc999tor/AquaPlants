@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Header from '../Header/Header';
 import CartItem from './CartItem/CartItem';
+import Delivery from './Delivery/Delivery';
 import Footer from '../Footer/Footer';
 
 import s from './Cart.module.css';
@@ -33,6 +34,7 @@ const Cart = ({ onHideCart, cart = [], sum, onRemoveFromCart, onIncrementCartIte
         <ul className={s.List}>
           {cart?.map(i => <CartItem key={i.id} i={i} onRemoveFromCart={onRemoveFromCart} onIncrementCartItem={onIncrementCartItem} onDecrementCartItem={onDecrementCartItem} />)}
         </ul>
+        <Delivery />
       </div>
       <Footer />
     </div>
