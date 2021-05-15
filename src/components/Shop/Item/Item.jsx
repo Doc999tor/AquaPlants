@@ -1,6 +1,25 @@
+import { useState } from 'react';
+
 import s from './Item.module.css';
 
-const Item = ({ i, onAddToCart }) => {
+const Item = ({ i, onAddToCart, itemsId  }) => {
+  const [amount, setAmount] = useState(1);
+  const handleIncrement = () => {
+    setAmount(prevState => {
+      if (prevState >= i.qty_stock) {
+        return prevState;
+      }
+      return prevState + 1;
+    });
+  };
+  const handleDecrement = () => {
+    setAmount(prevState => {
+      if (prevState <= 1) {
+        return prevState;
+      }
+      return prevState - 1;
+    });
+  };
   return(
     <div className={s.Item}>
       <figure>
@@ -16,9 +35,9 @@ const Item = ({ i, onAddToCart }) => {
           {i.qty_stock == 0 ? config.translations.out_of_stock_label : config.translations.in_stock_label}
         </span>
         <div className={s.Controls}>
-          <button type='button' className={s.Btn}><img src={config.urls.media + 'plus.svg'} alt='' /></button>
-          <span className={s.Qty}>1</span>
-          <button type='button' className={s.Btn}><img src={config.urls.media + 'minus.svg'} alt='' /></button>
+          <button type='button' className={s.Btn} onClick={handleIncrement} disabled={itemsId.includes(i.id)}><img src={config.urls.media + 'plus.svg'} alt='' /></button>
+          <span className={s.Qty}>{amount}</span>
+          <button type='button' className={s.Btn} onClick={handleDecrement} disabled={itemsId.includes(i.id)}><img src={config.urls.media + 'minus.svg'} alt='' /></button>
         </div>
         <div className={s.Price_wrap}>
           {i.price !== i.discount_price && <span className={s.Price}>{i.price + config.currency}</span>}
@@ -29,7 +48,13 @@ const Item = ({ i, onAddToCart }) => {
           </span>
         </div>
       </div>
-      <button type='button' className={s.Add_btn + (i.qty_stock == 0 ? ' ' + s.Hidden : '')} onClick={() => onAddToCart(i)}>{config.translations.add_to_card_label}</button>
+      <button
+        type='button'
+        className={s.Add_btn + (itemsId.includes(i.id) ? ' ' + s.Inactive_btn : '') + (i.qty_stock == 0 ? ' ' + s.Hidden : '')}
+        onClick={() => onAddToCart({...i, amount})}
+      >
+        {itemsId.includes(i.id) ? config.translations.added_to_card_label : config.translations.add_to_card_label}
+      </button>
     </div>
   );
 };

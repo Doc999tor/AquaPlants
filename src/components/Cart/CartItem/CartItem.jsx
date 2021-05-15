@@ -1,6 +1,6 @@
 import s from './CartItem.module.css';
 
-const CartItem = ({ i, onRemoveFromCart }) => {
+const CartItem = ({ i, onRemoveFromCart, onIncrementCartItem, onDecrementCartItem }) => {
   return (
     <li className={s.Item}>
       <button type='button' className={s.Btn} onClick={() => onRemoveFromCart(i.id)}><img src={config.urls.media + 'close.svg'} alt='' /></button>
@@ -12,9 +12,13 @@ const CartItem = ({ i, onRemoveFromCart }) => {
         </span>
       </div>
       <div className={s.Controls}>
-        <button type='button' className={s.Btn}><img src={config.urls.media + 'plus.svg'} alt='' /></button>
-        <span className={s.Qty}>1</span>
-        <button type='button' className={s.Btn}><img src={config.urls.media + 'minus.svg'} alt='' /></button>
+        <button type='button' className={s.Btn} onClick={() => onIncrementCartItem(i.id)}>
+          <img src={config.urls.media + 'plus.svg'} alt='' />
+        </button>
+        <span className={s.Qty}>{i.amount}</span>
+        <button type='button' className={s.Btn} onClick={() => onDecrementCartItem(i.id)}>
+          <img src={config.urls.media + 'minus.svg'} alt='' />
+        </button>
       </div>
       <figure className={s.Pic}>
         <figcaption>{i.name}</figcaption>

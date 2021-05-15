@@ -87,7 +87,11 @@
     font-size: 1rem;
     color: #3cb3e5;
     background-color: transparent;
+    transition: background-color 0.3s;
 }
 .Hidden {
     visibility: hidden;
+}
+.Inactive_btn {
+    background-color: #f1f1f1;
 }
