@@ -164,6 +164,12 @@ const config = {
     copy_rights: '© {year} all rights reserved.',
     delivery_options: {
       title: 'Delivery Options',
+      first_name_placeholder: 'First name',
+      last_name_placeholder: 'Last name',
+      email_placeholder: 'E-mail',
+      phone_placeholder: 'Phone',
+      address_placeholder: 'Address',
+      city_placeholder: 'City',
       min_total_price: 'Total price: {price}',
       shipping_price: 'Shipping price: {price}',
     }
