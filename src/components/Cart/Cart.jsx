@@ -34,7 +34,7 @@ const Cart = ({ onHideCart, cart = [], sum, onRemoveFromCart, onIncrementCartIte
         <ul className={s.List}>
           {cart?.map(i => <CartItem key={i.id} i={i} onRemoveFromCart={onRemoveFromCart} onIncrementCartItem={onIncrementCartItem} onDecrementCartItem={onDecrementCartItem} />)}
         </ul>
-        <Delivery sum={sum} />
+        <Delivery sum={sum} cart={cart} />
       </div>
       <Footer />
     </div>

@@ -148,7 +148,8 @@ const config = {
   urls: {
     media: './assets/media/',
     plants_pic: './assets/plants/',
-    pay_link: '/pay'
+    pay_link: '/pay',
+    order: 'https://api.bewebmaster.co.il/order-plants',
   },
   translations: {
     site_title: 'Make your unique aquarium',
