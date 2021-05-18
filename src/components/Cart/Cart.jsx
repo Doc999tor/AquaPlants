@@ -29,12 +29,14 @@ const Cart = ({ onHideCart, cart = [], sum, onRemoveFromCart, onIncrementCartIte
   return (
     <div className={s.Cart}>
       <Header cartMode cart={cart} sum={sum} />
-      <div className={s.Body}>
-        <h2 className={s.Title}>{config.translations.cart_title}</h2>
-        <ul className={s.List}>
-          {cart?.map(i => <CartItem key={i.id} i={i} onRemoveFromCart={onRemoveFromCart} onIncrementCartItem={onIncrementCartItem} onDecrementCartItem={onDecrementCartItem} />)}
-        </ul>
-        <Delivery sum={sum} cart={cart} />
+      <div className={s.Bg} style={{backgroundImage: `url('${config.urls.media}bg-wave.png')`}}>
+        <div className={s.Body}>
+          <h2 className={s.Title}>{config.translations.cart_title}</h2>
+          <ul className={s.List}>
+            {cart?.map(i => <CartItem key={i.id} i={i} onRemoveFromCart={onRemoveFromCart} onIncrementCartItem={onIncrementCartItem} onDecrementCartItem={onDecrementCartItem} />)}
+          </ul>
+          <Delivery sum={sum} cart={cart} />
+        </div>
       </div>
       <Footer />
     </div>

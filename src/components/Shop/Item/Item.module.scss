@@ -122,6 +122,9 @@
 }
 .Body picture *:not(img) { height: 0; width: 0; }
 .Body picture img { width: 100%; height: 100%; object-fit: cover }
+.Check {
+    animation: body 0.3s;
+}
 @keyframes wrap {
     0% {
         background-color: rgba(0,0,0,0);

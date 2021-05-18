@@ -64,7 +64,7 @@ const Item = ({ i, onAddToCart, itemsId, onDecrementCartItem, onIncrementCartIte
         className={s.Add_btn + (itemsId.includes(i.id) ? ' ' + s.Inactive_btn : '') + (i.qty_stock == 0 ? ' ' + s.Hidden : '')}
         onClick={() => onAddToCart({...i, amount})}
       >
-        {itemsId.includes(i.id) ? config.translations.added_to_card_label : config.translations.add_to_card_label}
+        {itemsId.includes(i.id) ? <img className={s.Check} src={`${config.urls.media}check.svg`} alt=""/> : config.translations.add_to_card_label}
       </button>
       {gallery && <div className={s.Gallery} onClick={handleHideGallery}>
         <div className={s.Body} onClick={e => e.stopPropagation()}>

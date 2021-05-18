@@ -11,6 +11,11 @@
     overflow: auto;
     height: 100%;
 }
+.Bg {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 2%;
+}
 .Body {
     padding-top: 13rem;
     flex-grow: 1;
