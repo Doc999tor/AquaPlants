@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    width: 90%;
     height: 9.75rem;
     margin: 0 auto;
 }
@@ -19,4 +19,32 @@
 }
 .Pay {
     height: 2rem;
+}
+@media (max-width: 1024px) {
+    .Logo {
+        width: 5rem;
+    }
+    .Pay {
+        height: 1rem;
+    }
+    .C_r small {
+        font-size: 0.625rem;
+    }
+    .Wrap {
+        height: auto;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .Wrap {
+        height: 6rem;
+    }
+    .Logo {
+        width: 5.5rem;
+    }
+
+}
+@media (min-width: 1600px) {
+    .Wrap {
+        width: 70%;
+    }
 }

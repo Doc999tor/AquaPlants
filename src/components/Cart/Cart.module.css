@@ -23,8 +23,18 @@
     text-align: center;
     padding-bottom: 1.875rem;
 }
-/*.List {*/
-/*    !*display: flex;*!*/
-/*    !*flex-direction: column;*!*/
-/*    margin-bottom: 9.75rem;*/
-/*}*/
+@media (max-width: 1024px) {
+    .Body {
+        width: 90%;
+        padding-top: 6rem;
+    }
+    .Title {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+}
+@media (max-width: 1375px) {
+    .Body {
+        width: 80%;
+    }
+}

@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 40%;
+    width: 45%;
 }
 .Item picture {
     display: flex;
@@ -52,6 +52,13 @@
     box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
     background-color: #ffffff;
 }
+.Cont {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline-end: 4rem;
+}
 .Qty {
     display: flex;
     justify-content: center;
@@ -62,4 +69,32 @@
 .Controls {
     display: flex;
     align-items: center;
+}
+@media (max-width: 640px) {
+    .Item {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    .Item figure {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+    .Item figcaption {
+        padding: 1rem 0 0;
+    }
+    .Cont {
+        width: 75%;
+        padding-inline-end: 0;
+        padding-bottom: 1rem;
+    }
+}
+@media (min-width: 641px) and (max-width: 1200px) {
+    .Item figure {
+        width: 50%;
+    }
+    .Cont {
+        padding-inline-end: 0;
+    }
 }

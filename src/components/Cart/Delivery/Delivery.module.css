@@ -67,3 +67,31 @@
         transform: rotate(360deg);
     }
 }
+@media (max-width: 640px) {
+    .Wrap {
+        padding-top: 1rem;
+    }
+    .Title {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    .Inputs_wrap {
+        width: 100%;
+        padding: 0 0 0.5rem;
+    }
+    .Input {
+        width: 49%;
+    }
+    .Text {
+        font-size: 1rem;
+    }
+    .Pay {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width: 1375px) {
+    .Inputs_wrap {
+        width: 100%;
+    }
+}
