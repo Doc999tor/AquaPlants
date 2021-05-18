@@ -111,3 +111,19 @@
     background-color: rgba(0,0,0,0.7);
     animation: wrap 0.3s;
 }
+.Body {
+    width: 60%;
+    max-width: 800px;
+    animation: body 0.3s;
+}
+@keyframes wrap {
+    0% {
+        background-color: rgba(0,0,0,0);
+    }
+}
+@keyframes body {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+}

@@ -21,6 +21,15 @@ ul {
 .hidden {
   overflow: hidden;
 }
+.swiper-container {
+  width: 100%;
+}
+.swiper-wrapper {
+  width: 100%;
+}
+.swiper-button-prev, .swiper-button-next {
+  color: white !important;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

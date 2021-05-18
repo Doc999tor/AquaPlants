@@ -8,7 +8,7 @@ const config = {
         sub_title: 'Stems Per Pot: 1Common Name: DownoiPlant Use: Foreground Difficulty\nLevel: Medium Light Demand: Medium Co2 Demand: Medium Fertilizer Demand: Medium',
         plants: [
           {
-            id: 5,
+            id: 100,
             name: 'uniq',
             photo: ['photo1', 'photo2'],
             description: 'Stems Per Pot: 1Common Name: DownoiPlant Use: Foreground Difficulty Level: Medium Light Demand: Medium Co2 Demand: Medium Fertilizer Demand: Medium',

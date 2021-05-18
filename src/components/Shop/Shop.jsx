@@ -3,8 +3,7 @@ import Item from './Item/Item';
 import s from './Shop.module.css';
 
 const Shop = ({ onAddToCart, itemsId = [], onIncrementCartItem, onDecrementCartItem, filter }) => {
-  const visibleItems = config.data.plants_categories.map(i => i.plants)?.flat().filter(i => i.name?.toLowerCase()?.includes(filter?.toLowerCase()))
-  // console.log(visibleItems)
+  const visibleItems = config.data.plants_categories.map(i => i.plants)?.flat().filter(i => i.name?.toLowerCase()?.includes(filter?.toLowerCase()));
   return (
     <div className={s.Shop}>
       <div className={s.Header}>

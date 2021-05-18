@@ -9,6 +9,6 @@ const FloatBtn = ({ cart = [], onShowCart }) => {
       </span>
     </button>
   );
-}
+};
 
 export default FloatBtn;

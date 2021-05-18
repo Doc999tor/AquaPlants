@@ -1,9 +1,16 @@
 import { useState } from 'react';
+import SwiperCore, { Navigation } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import s from './Item.module.css';
+import s from './Item.module.scss';
+import 'swiper/swiper.scss';
+import 'swiper/components/navigation/navigation.scss';
+
+SwiperCore.use([Navigation]);
 
 const Item = ({ i, onAddToCart, itemsId, onDecrementCartItem, onIncrementCartItem  }) => {
   const [amount, setAmount] = useState(1);
+  const [gallery, setGallery] = useState(false);
   const handleIncrement = () => {
     setAmount(prevState => {
       if (prevState >= i.qty_stock) {
@@ -22,10 +29,12 @@ const Item = ({ i, onAddToCart, itemsId, onDecrementCartItem, onIncrementCartIte
     });
     itemsId.includes(i.id) && onDecrementCartItem(i.id);
   };
+  const handleShowGallery = () => setGallery(true);
+  const handleHideGallery = () => setGallery(false);
   return(
     <div className={s.Item}>
       <figure>
-        <picture>
+        <picture onClick={handleShowGallery}>
           <source className={s.Plant_pic} srcSet={config.urls.plants_pic + i.photo[0] + '.webp'} type='image/webp' loading='lazy' />
           <img className={s.Plant_pic} src={config.urls.plants_pic + i.photo[0] + '.jpg'} alt='makeup' loading='lazy' />
         </picture>
@@ -57,6 +66,21 @@ const Item = ({ i, onAddToCart, itemsId, onDecrementCartItem, onIncrementCartIte
       >
         {itemsId.includes(i.id) ? config.translations.added_to_card_label : config.translations.add_to_card_label}
       </button>
+      {gallery && <div className={s.Gallery} onClick={handleHideGallery}>
+        <div className={s.Body} onClick={e => e.stopPropagation()}>
+          <Swiper navigation >
+            {i.photo?.map((item, index) => (
+              <SwiperSlide key={item.name + '' + index} >
+                <picture>
+                  <source srcSet={config.urls.plants_pic + item + '.webp'} type='image/webp' loading='lazy'/>
+                  <img src={config.urls.plants_pic + item + '.jpg'} alt={item} loading='lazy'/>
+                </picture>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
+      </div>}
     </div>
   );
 };
