@@ -163,6 +163,9 @@ const config = {
     free_label: 'Free',
     cart_title: 'Cart',
     copy_rights: '© {year} all rights reserved.',
+    plus_label: 'plus',
+    minus_label: 'minus',
+    remove_from_cart_label: 'remove from cart',
     delivery_options: {
       title: 'Delivery Options',
       first_name_placeholder: 'First name',

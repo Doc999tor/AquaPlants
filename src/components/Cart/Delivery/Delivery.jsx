@@ -56,6 +56,7 @@ const Delivery = ({ sum, cart }) => {
               className={s.Input}
               onChange={handleChangeInput}
               value={data.firstName}
+              aria-label={config.translations.delivery_options?.first_name_placeholder}
               placeholder={config.translations.delivery_options?.first_name_placeholder}
               required
             />
@@ -65,6 +66,7 @@ const Delivery = ({ sum, cart }) => {
               className={s.Input}
               onChange={handleChangeInput}
               value={data.lastName}
+              aria-label={config.translations.delivery_options?.last_name_placeholder}
               placeholder={config.translations.delivery_options?.last_name_placeholder}
               required
             />
@@ -74,6 +76,7 @@ const Delivery = ({ sum, cart }) => {
               type="tel"
               name='phone'
               className={`${s.Input} ${s.Input_phone}`}
+              aria-label={config.translations.delivery_options?.phone_placeholder}
               placeholder={config.translations.delivery_options?.phone_placeholder}
               onChange={handleChangeInput}
               value={data.phone}
@@ -85,6 +88,7 @@ const Delivery = ({ sum, cart }) => {
               className={s.Input}
               onChange={handleChangeInput}
               value={data.email}
+              aria-label={config.translations.delivery_options?.email_placeholder}
               placeholder={config.translations.delivery_options?.email_placeholder}
             />
           </div>
@@ -95,6 +99,7 @@ const Delivery = ({ sum, cart }) => {
               className={s.Input}
               onChange={handleChangeInput}
               value={data.address}
+              aria-label={config.translations.delivery_options?.address_placeholder}
               placeholder={config.translations.delivery_options?.address_placeholder}
               required
             />
@@ -104,6 +109,7 @@ const Delivery = ({ sum, cart }) => {
               className={s.Input}
               value={data.city}
               onChange={handleChangeInput}
+              aria-label={config.translations.delivery_options?.city_placeholder}
               placeholder={config.translations.delivery_options?.city_placeholder}
               required
             />
@@ -112,7 +118,7 @@ const Delivery = ({ sum, cart }) => {
         <p className={s.Text}>{config.translations.delivery_options.shipping_price?.replace('{price}', config.data.shipping_price)}</p>
         <p className={s.Text}>{config.translations.delivery_options.min_total_price?.replace('{price}', sum + config.data.shipping_price)}</p>
         <button type='submit' className={s.Pay}>
-          {loading ? <img className={s.Loader} src={`${config.urls.media}loader.svg`} alt=''/>  : <img className={s.Pay_img} src={`${config.urls.media}paypal.png`} alt=''/>}
+          {loading ? <img className={s.Loader} src={`${config.urls.media}loader.svg`} alt=''/>  : <img className={s.Pay_img} src={`${config.urls.media}paypal.png`} alt='paypal logo'/>}
         </button>
       </form>
       {showPopup && (<Popup success={success}/>)}

@@ -99,6 +99,7 @@
     justify-content: flex-end;
     position: relative;
     width: 6rem;
+    cursor: pointer;
 }
 .Circle img.Img {
     width: 1.5rem;

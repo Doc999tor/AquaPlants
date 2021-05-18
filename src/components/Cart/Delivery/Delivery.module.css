@@ -51,6 +51,7 @@
     margin: 2rem auto 4.75rem;
     border-radius: 1.5rem;
     background-color: #fec43a;
+    cursor: pointer;
 }
 .Loader {
     width: 1.5rem;

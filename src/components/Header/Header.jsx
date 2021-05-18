@@ -8,21 +8,21 @@ const Header = ({ cartMode = false, onShowCart, cart = [], sum, filter, onChange
           <div className={s.Cart} onClick={onShowCart}>
             <span className={s.Cart_value}>{sum}{config.currency}</span>
             <span className={s.Circle}>
-              <img className={s.Img} src={`${config.urls.media}shopping-cart-outline.svg`} alt='' />
+              <img className={s.Img} src={`${config.urls.media}shopping-cart-outline.svg`} alt='cart' />
               {cart?.length > 0 && <span className={s.Cart_count}>{cart?.length}</span>}
             </span>
           </div>
           <a className={s.Phone} href={`tel:${config.phone}`}>
             <span className={`${s.Circle} ${s.Call}`}>
-              <img src={`${config.urls.media}phone-call.svg`} alt='' />
+              <img src={`${config.urls.media}phone-call.svg`} alt='phone' />
             </span>
             <span className={s.Phone_value}>{config.phone}</span>
           </a>
         </div>
         <div className={s.Group}>
           {!cartMode && (
-            <label className={s.Search_input}><img src={`${config.urls.media}search.svg`} alt=''/>
-              <input type='text' placeholder={config.translations.search_placeholder} value={filter} onChange={onChangeFilter}/>
+            <label className={s.Search_input}><img src={`${config.urls.media}search.svg`} alt='search'/>
+              <input type='text' placeholder={config.translations.search_placeholder} aria-label={config.translations.search_placeholder} value={filter} onChange={onChangeFilter}/>
             </label>
           )}
           <a href='#'><img className={s.Logo} src={`${config.urls.media}${cartMode ? 'logo-color' : 'logo'}.png`} alt='logo' /></a>

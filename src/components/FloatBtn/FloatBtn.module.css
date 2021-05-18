@@ -8,6 +8,7 @@
     border: none;
     background-color: #0d9441;
     box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 .Inner {
     position: relative;

@@ -46,9 +46,9 @@ const Item = ({ i, onAddToCart, itemsId, onDecrementCartItem, onIncrementCartIte
           {i.qty_stock == 0 ? config.translations.out_of_stock_label : config.translations.in_stock_label}
         </span>
         <div className={s.Controls}>
-          <button type='button' className={s.Btn} onClick={handleIncrement} ><img src={config.urls.media + 'plus.svg'} alt='' /></button>
+          <button type='button' className={s.Btn} onClick={handleIncrement} aria-label={config.translations.plus_label}><img src={config.urls.media + 'plus.svg'} alt='plus' /></button>
           <span className={s.Qty}>{amount}</span>
-          <button type='button' className={s.Btn} onClick={handleDecrement} ><img src={config.urls.media + 'minus.svg'} alt='' /></button>
+          <button type='button' className={s.Btn} onClick={handleDecrement} aria-label={config.translations.minus_label}><img src={config.urls.media + 'minus.svg'} alt='minus' /></button>
         </div>
         <div className={s.Price_wrap}>
           {i.price !== i.discount_price && <span className={s.Price}>{i.price + config.currency}</span>}
@@ -61,10 +61,11 @@ const Item = ({ i, onAddToCart, itemsId, onDecrementCartItem, onIncrementCartIte
       </div>
       <button
         type='button'
+        aria-label={config.translations.add_to_card_label}
         className={s.Add_btn + (itemsId.includes(i.id) ? ' ' + s.Inactive_btn : '') + (i.qty_stock == 0 ? ' ' + s.Hidden : '')}
         onClick={() => onAddToCart({...i, amount})}
       >
-        {itemsId.includes(i.id) ? <img className={s.Check} src={`${config.urls.media}check.svg`} alt=""/> : config.translations.add_to_card_label}
+        {itemsId.includes(i.id) ? <img className={s.Check} src={`${config.urls.media}check.svg`} alt='check' /> : config.translations.add_to_card_label}
       </button>
       {gallery && <div className={s.Gallery} onClick={handleHideGallery}>
         <div className={s.Body} onClick={e => e.stopPropagation()}>
