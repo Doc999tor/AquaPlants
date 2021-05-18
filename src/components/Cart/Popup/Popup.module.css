@@ -1,0 +1,68 @@
+.Wrap {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.7);
+    animation: wrap 0.3s;
+}
+.Body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3rem;
+    padding: 3.5rem 2rem;
+    width: 70%;
+    max-width: 640px;
+    background-color: white;
+    animation: body 0.3s;
+}
+.Img {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 1.5rem;
+}
+.Circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.Outer {
+    width: 10rem;
+    height: 10rem;
+    background-color: rgba(194,44,113, 0.1);
+    margin-bottom: 1.5rem;
+}
+.Inner {
+    width: 8.125rem;
+    height: 8.125rem;
+    background-color: rgba(184,42,107, 0.2);
+}
+.Center {
+    width: 6.25rem;
+    height: 6.25rem;
+    background-image: linear-gradient(137deg, #ff55a2 15%, #981f57 85%);
+}
+.Text {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+@keyframes wrap {
+    0% {
+        background-color: rgba(0,0,0,0);
+    }
+}
+@keyframes body {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+}

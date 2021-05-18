@@ -1,6 +1,6 @@
 import s from './Header.module.css';
 
-const Header = ({ cartMode = false, onShowCart, cart = [], sum }) => {
+const Header = ({ cartMode = false, onShowCart, cart = [], sum, filter, onChangeFilter }) => {
   return (
     <header className={s.Header + (cartMode ? ` ${s.Cart_header}` : '')}>
       <div className={s.Cont}>
@@ -8,7 +8,7 @@ const Header = ({ cartMode = false, onShowCart, cart = [], sum }) => {
           <div className={s.Cart} onClick={onShowCart}>
             <span className={s.Cart_value}>{sum}{config.currency}</span>
             <span className={s.Circle}>
-              <img src={`${config.urls.media}shopping-bag.svg`} alt='' />
+              <img className={s.Img} src={`${config.urls.media}shopping-cart-outline.svg`} alt='' />
               {cart?.length > 0 && <span className={s.Cart_count}>{cart?.length}</span>}
             </span>
           </div>
@@ -20,9 +20,11 @@ const Header = ({ cartMode = false, onShowCart, cart = [], sum }) => {
           </a>
         </div>
         <div className={s.Group}>
-          <label className={s.Search_input}><img src={`${config.urls.media}search.svg`} alt='' />
-            <input type='text' placeholder={config.translations.search_placeholder} />
-          </label>
+          {!cartMode && (
+            <label className={s.Search_input}><img src={`${config.urls.media}search.svg`} alt=''/>
+              <input type='text' placeholder={config.translations.search_placeholder} value={filter} onChange={onChangeFilter}/>
+            </label>
+          )}
           <a href='#'><img className={s.Logo} src={`${config.urls.media}${cartMode ? 'logo-color' : 'logo'}.png`} alt='logo' /></a>
         </div>
       </div>

@@ -9,7 +9,7 @@ const config = {
         plants: [
           {
             id: 5,
-            name: 'Plant name',
+            name: 'uniq',
             photo: ['photo1', 'photo2'],
             description: 'Stems Per Pot: 1Common Name: DownoiPlant Use: Foreground Difficulty Level: Medium Light Demand: Medium Co2 Demand: Medium Fertilizer Demand: Medium',
             price: 10,
@@ -148,8 +148,8 @@ const config = {
   urls: {
     media: './assets/media/',
     plants_pic: './assets/plants/',
-    pay_link: '/pay',
-    order: 'https://api.bewebmaster.co.il/order-plants',
+    pay_link: 'https://paypal.me/VictorSulema/{total_price}',
+    order: 'https://api.bewebmaster.co.il/aqua_plants/order-sdYoqg',
   },
   translations: {
     site_title: 'Make your unique aquarium',
@@ -173,6 +173,10 @@ const config = {
       city_placeholder: 'City',
       min_total_price: 'Total price: {price}',
       shipping_price: 'Shipping price: {price}',
+    },
+    send_popup: {
+      success: 'We\'re working on the order, we\'ll contact you shortly',
+      error: 'Something went wrong, pls contact us for finishing the order',
     }
   }
 };

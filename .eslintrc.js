@@ -30,16 +30,16 @@ module.exports = {
   'rules': {
     'indent': [2,2],
     'linebreak-style': [
-      'error',
+      0,
       'unix'
     ],
     'quotes': [
-      'error',
+      'warn',
       'single'
     ],
     'react/prop-types': 0,
     'semi': [
-      'error',
+      'warn',
       'always'
     ],
     'no-unused-vars': [
@@ -51,7 +51,7 @@ module.exports = {
       }
     ],
     'arrow-parens': ['error', 'as-needed'],
-    'camelcase': 'warn',
+    'camelcase': 0,
     'vars-on-top': 1,
     'no-console': 1,
     'template-curly-spacing': ['error', 'never']

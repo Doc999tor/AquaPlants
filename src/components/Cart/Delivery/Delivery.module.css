@@ -36,9 +36,6 @@
 .Input::placeholder {
     color: #919191;
 }
-.Pay img {
-    width: 7.125rem;
-}
 .Text {
     font-size: 1.5rem;
     font-weight: 500;
@@ -54,4 +51,19 @@
     margin: 2rem auto 4.75rem;
     border-radius: 1.5rem;
     background-color: #fec43a;
+}
+.Loader {
+    width: 1.5rem;
+    animation: loading 1s infinite linear;
+}
+.Pay_img {
+    width: 7.125rem;
+}
+@keyframes loading {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

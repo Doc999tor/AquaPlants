@@ -3,12 +3,14 @@ import Header from './components/Header/Header';
 import Shop from './components/Shop/Shop';
 import Footer from './components/Footer/Footer';
 import Cart from './components/Cart/Cart';
+import FloatBtn from './components/FloatBtn/FloatBtn';
 import s from './styles.module.css';
 
 function App() {
   const [showCart, setShowCart] = useState(false);
   const [cart, setCart] = useState([]);
   const [sum, setSum] = useState(0);
+  const [filter, setFilter] = useState('');
   useEffect(() => {
     const total = cart?.reduce((total, i) => {
       const price = i.discount_price <= i.price
@@ -22,6 +24,9 @@ function App() {
     if (!showCart) {
       setShowCart(true);
     }
+  };
+  const handleChangeFilter = ({ target: { value }}) => {
+    setFilter(value);
   };
   const handleAddToCart = item => {
     const obj = cart.find(i => i.id == item.id) || {};
@@ -41,17 +46,9 @@ function App() {
       return prevState?.map(item => item.id == id ? {...item, amount: item.amount <= 1 ? item.amount : item.amount - 1} : item);
     });
   };
-  // const handleDecrement = () => {
-  //   setAmount(prevState => {
-  //     if (prevState <= 1) {
-  //       return prevState;
-  //     }
-  //     return prevState - 1;
-  //   });
-  // };
   return (
     <div className={s.App}>
-      <Header onShowCart={handleShowCart} cart={cart} sum={sum} />
+      <Header onShowCart={handleShowCart} cart={cart} sum={sum} filter={filter} onChangeFilter={handleChangeFilter} />
       <main>
         <div className={s.Aqua} style={{backgroundImage: `url('${config.urls.media}aquarium.png')`}}>
           <div className={s.Texts}>
@@ -64,6 +61,7 @@ function App() {
           onIncrementCartItem={handleIncrementCartItem}
           onDecrementCartItem={handleDecrementCartItem}
           itemsId={ItemIds}
+          filter={filter}
         />
       </main>
       {showCart && (
@@ -77,6 +75,7 @@ function App() {
         />
       )}
       <Footer />
+      <FloatBtn cart={cart} onShowCart={handleShowCart} />
     </div>
   );
 }

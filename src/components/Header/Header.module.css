@@ -94,6 +94,9 @@
     position: relative;
     width: 6rem;
 }
+.Circle img.Img {
+    width: 1.5rem;
+}
 .Cart_value {
     position: absolute;
     left: 4rem;
