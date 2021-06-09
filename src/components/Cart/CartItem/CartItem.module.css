@@ -96,6 +96,6 @@
         width: 50%;
     }
     .Cont {
-        padding-inline-end: 0;
+        padding-inline-end: 2rem;
     }
 }

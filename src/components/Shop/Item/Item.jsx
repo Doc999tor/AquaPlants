@@ -36,7 +36,7 @@ const Item = ({ i, onAddToCart, itemsId, onDecrementCartItem, onIncrementCartIte
       <figure>
         <picture onClick={handleShowGallery}>
           <source className={s.Plant_pic} srcSet={config.urls.plants_pic + i.photo[0] + '.webp'} type='image/webp' loading='lazy' />
-          <img className={s.Plant_pic} src={config.urls.plants_pic + i.photo[0] + '.jpg'} alt='makeup' loading='lazy' />
+          <img className={s.Plant_pic} src={config.urls.plants_pic + i.photo[0] + '.jpg'} alt={i.name} loading='lazy' />
         </picture>
         <figcaption>{i.name}</figcaption>
       </figure>

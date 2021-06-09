@@ -80,7 +80,7 @@
     margin-inline-end: 1.25rem;
 }
 .Circle img {
-    width: 1.25rem;
+    width: 2rem;
 }
 .Phone {
     display: flex;
@@ -118,6 +118,10 @@
     color: #252525;
 }
 @media (max-width: 1024px) {
+    .Search_input {
+        max-width: calc(100% - 5rem);
+        margin-inline-end: auto;
+    }
     .Header {
         height: auto;
         padding: 0.5rem 0 1rem;
@@ -134,6 +138,8 @@
     }
     .Cont {
         flex-direction: column-reverse;
+        width: 100%;
+        padding: 0 1rem;
     }
     .Phone {
         margin: 0;
