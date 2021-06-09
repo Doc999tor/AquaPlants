@@ -46,13 +46,15 @@ function App() {
       return prevState?.map(item => item.id == id ? {...item, amount: item.amount <= 1 ? item.amount : item.amount - 1} : item);
     });
   };
+  const bgPicturesPoolSize = 5;
+  const findBGPicture = () => Date.now() % bgPicturesPoolSize + 1;
   return (
     <div className={s.App}>
       <Header onShowCart={handleShowCart} cart={cart} sum={sum} filter={filter} onChangeFilter={handleChangeFilter} />
       <main>
-        <div className={s.Aqua} style={{backgroundImage: `url('${config.urls.media}aquarium.png')`}}>
+        <div className={s.Aqua} style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('${config.urls.media}bg/${findBGPicture()}.jpg')`}}>
           <div className={s.Texts}>
-            <h2 className={s.Title}>{config.translations.site_title}</h2>
+            <h1 className={s.Title}>{config.translations.site_title}</h1>
             <p className={s.Subtitle}>{config.translations.site_subtitle}</p>
           </div>
         </div>

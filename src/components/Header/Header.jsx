@@ -12,9 +12,9 @@ const Header = ({ cartMode = false, onShowCart, cart = [], sum, filter, onChange
               {cart?.length > 0 && <span className={s.Cart_count}>{cart?.length}</span>}
             </span>
           </div>
-          <a className={s.Phone} href={`tel:${config.phone}`}>
+          <a className={s.Phone} href={`https://wa.me/${config.phone.slice(1)}`}>
             <span className={`${s.Circle} ${s.Call}`}>
-              <img src={`${config.urls.media}phone-call.svg`} alt='phone' />
+              <img src={`${config.urls.media}whatsapp.svg`} alt='whatsapp' />
             </span>
             <span className={s.Phone_value}>{config.phone}</span>
           </a>
