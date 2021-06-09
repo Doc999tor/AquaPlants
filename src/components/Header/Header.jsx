@@ -25,7 +25,7 @@ const Header = ({ cartMode = false, onShowCart, cart = [], sum, filter, onChange
               <input type='text' placeholder={config.translations.search_placeholder} aria-label={config.translations.search_placeholder} value={filter} onChange={onChangeFilter}/>
             </label>
           )}
-          <a href='#'><img className={s.Logo} src={`${config.urls.media}${cartMode ? 'logo-color' : 'logo'}.png`} alt='logo' /></a>
+          <a href='#'><img className={s.Logo} src={`${config.urls.media}${cartMode ? 'logo-color' : 'aquaplants'}.jpg`} alt='logo' /></a>
         </div>
       </div>
     </header>
