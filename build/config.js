@@ -30,8 +30,8 @@ const config = {
             name: 'Vallisneria spiralis - וולסנריה מסולסלת',
             photo: ['vallisneria-spiralis'],
             description: 'צמח גבוה אם גדל בצפיפות, מהיר-גדילה, מתפשט מהר לצדדים ויוצר ג\'ונגל מאוד מרשים\nמעולה ללאו-טק, לא מחייב דישון, CO2 או תאורה חזקה\nמנה אחת - 3 גבועלים בוגרים',
-            price: 30,
-            discount_price: 30,
+            price: 35,
+            discount_price: 15,
             qty_stock: 10 // 0 is not in stock
           },
           {
@@ -48,8 +48,8 @@ const config = {
             name: 'Sagittaria subulata - סגיטריה סובולטה',
             photo: ['sagittaria_subulata_1', 'sagittaria_subulata_2'],
             description: 'צמח דשא או לקידמה של אקווריומי לאו-טק\nמנה אחת - 3 גבועלים בוגרים',
-            price: 30,
-            discount_price: 30,
+            price: 35,
+            discount_price: 35,
             qty_stock: 5 // 0 is not in stock
           },
           {
@@ -99,8 +99,8 @@ const config = {
             name: 'Myriophyllum heterophyllum - מיריופילום עם גבעול אדום',
             photo: ['myriophyllum_heterophyllum_1', 'myriophyllum_heterophyllum_2', ],
             description: 'מיריופילום יפה מאוד, עם גבעול אדום ועלים ירוקים\nמנה אחת - 3 גבועלים בוגרים',
-            price: 50,
-            discount_price: 45,
+            price: 45,
+            discount_price: 35,
             qty_stock: 5 // 0 is not in stock
           },
           {
@@ -108,8 +108,8 @@ const config = {
             name: 'Didiplis diandra - דידיפליס דיאנדרה',
             photo: ['didiplis-diandra-1', 'didiplis-diandra-2'],
             description: 'צמח מהיר-גדילה מקסים\nמתאים לעיצוב של אחורית וצדדים של האק\'\nדורש תאורה טובה\nמנה אחת - 3 גבועלים בוגרים',
-            price: 50,
-            discount_price: 45,
+            price: 45,
+            discount_price: 35,
             qty_stock: 3 // 0 is not in stock
           },
           {
@@ -127,7 +127,7 @@ const config = {
             photo: ['hygrophila_tiger_1', 'hygrophila_tiger_2', 'hygrophila_tiger_3'],
             description: 'צמח היי-טק נדיר ומיוחד - Hygrophila sp. Tiger רק למביני עניין מהיר-גדילה, מעולה לאחורנית\nמנה אחת - 3 גבועלים בוגרים',
             price: 50,
-            discount_price: 45,
+            discount_price: 35,
             qty_stock: 2 // 0 is not in stock
           },
         ]
