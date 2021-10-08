@@ -41,7 +41,7 @@ const config = {
             description: 'מלכת הדשאים בלאו-טק ובכל אקווריום אחר! מתפשטת בצורה איטית אבל כובשת את שטח התחתית\nיוצרת דשא בצבע ירוק-כהה, שונה מכל המתחרים שלה. הדשא היחיד שמתפתח יפה גם בתנאי לאו-טק. שווה בכל אקווריום\nמנה אחת - שטיחון 5*5סמ\'',
             price: 50,
             discount_price: 45,
-            qty_stock: 5 // 0 is not in stock
+            qty_stock: 3 // 0 is not in stock
           },
           {
             id: 'sagittaria_subulata',
@@ -100,7 +100,7 @@ const config = {
             photo: ['echinodorus-vesuvius'],
             description: 'אחד הצמחים היפים והמיוחדים באקווריום צמחייה.\nשונה מכל שאר אכונודורוסים, הוא יוצר חוויה יוצאת דופן.\nאיטי-גדילה, צמח מיד-טק, אחרי 3-4 חודשים אתם תגלו סבך צפוף יפה ומרשים.',
             price: 50,
-            discount_price: 45,
+            discount_price: 35,
             qty_stock: 5 // 0 is not in stock
           },
           {
@@ -119,6 +119,15 @@ const config = {
             description: 'צמח מהיר-גדילה מקסים\nמתאים לעיצוב של אחורית וצדדים של האק\'\nדורש תאורה טובה\nמנה אחת - 3 גבעולים בוגרים',
             price: 45,
             discount_price: 35,
+            qty_stock: 3 // 0 is not in stock
+          },
+          {
+            id: 'cyperus_helferi',
+            name: 'Cyperus helferi - ציפרוס הלפרי',
+            photo: ['cyperus_helferi_1', 'cyperus_helferi_2'],
+            description: 'צמח לא ידוע הרבה בארץ, עלים ארוכים וצרים מעוד, גדל די לעט, פעם לכמה זמן שולח שלוחות\nצמח בודד במנה',
+            price: 45,
+            discount_price: 45,
             qty_stock: 3 // 0 is not in stock
           },
           {
@@ -145,6 +154,24 @@ const config = {
         title: 'מוסים (טחבים) ושרכים',
         sub_title: 'מוסים ושרכים הם אבני בניין של כל אקווריום צמחייה או אקווה סקייפ. רובם לא דורשים תנאים מיוחדים, יכולים לגדול בכל צנצנצ מים נקיים. מתשמשים בהם הרבה כדי לעצב תוואי שטח, להסתיר ציוד, בתור מצע לשרימסים והטלת דגי חתול',
         plants: [
+          {
+            id: 'vesicularia_dubyana',
+            name: 'ג\'אווה מוס - Java moss (Vesicularia dubyana)',
+            photo: ['vesicularia_dubyana'],
+            description: 'מוס הכי אהוב על ידי אקווה סקייפרים, מקבל כל צורה שתתנו לו, יוצר מרבד ירוק קהה מרשים\nצמח שהכי קל לגדל, גדל בכיף בכל צנצנת מים',
+            price: 35,
+            discount_price: 35,
+            qty_stock: 2 // 0 is not in stock
+          },
+          {
+            id: 'monosolenium_tenerum',
+            name: 'פליה - Pelia - Monosolenium tenerum',
+            photo: ['monosolenium_tenerum_1', 'monosolenium_tenerum_2', ],
+            description: 'מוס שונה במראה מכל המוסים הרגילים, בולט בצורה מרשימה על פני ג\'ווה מוס - מאוד כדאי לשלב אותם ביחד עם כמה שרכים\nגם לאו-טק, גדל בכיף בכל צנצנת מים',
+            price: 35,
+            discount_price: 35,
+            qty_stock: 2 // 0 is not in stock
+          },
           {
             id: 'microsorum_pteropus_windelov',
             name: 'שרך תאילנדי (מיקרוסוריום פטרופוס) ווינדלוב - Microsorum pteropus Windelov, Windelov java fern',
@@ -176,7 +203,7 @@ const config = {
             id: 'microsorum_pteropus_fishtail',
             name: 'שרך תאילנדי (מיקרוסוריום פטרופוס) זנב דג - Microsorum pteropus fishtail, fishtail java fern',
             photo: ['microsorum_pteropus_fishtail'],
-            description: 'שרך נדיר מאוד',
+            description: 'שרך מיוחד ונדיר מאוד',
             price: 50,
             discount_price: 50,
             qty_stock: 3 // 0 is not in stock
