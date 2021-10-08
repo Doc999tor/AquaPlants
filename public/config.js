@@ -14,7 +14,7 @@ const config = {
             description: 'צמח מהיר-גדילה מקסים, עם צבע ירוק-רענן, שגודל בתנאים טובים ממש מהר ויוצר סבך יפה\nמנה אחת - 3 גבעולים בוגרים',
             price: 35,
             discount_price: 35,
-            qty_stock: 15 // 0 is not in stock
+            qty_stock: 1 // 0 is not in stock
           },
           {
             id: 'cabomba_carolineana',
@@ -23,7 +23,7 @@ const config = {
             description: 'צמח גדול, מהיר-גדילה, עם עלים בצבע ירוק-כהה וסגלגל בצד התחתון\nמעולה ללאו-טק, לא מחייב דישון, CO2 או תאורה מעל 0.7 ווט לליטר. בתאורה חזקה יותר מקבל צבע אדום יפה\nמנה אחת - 3 גבעולים בוגרים',
             price: 45,
             discount_price: 45,
-            qty_stock: 1 // 0 is not in stock
+            qty_stock: 0 // 0 is not in stock
           },
           {
             id: 'vallisneria-spiralis',
@@ -171,6 +171,15 @@ const config = {
             price: 35,
             discount_price: 35,
             qty_stock: 5 // 0 is not in stock
+          },
+          {
+            id: 'microsorum_pteropus_fishtail',
+            name: 'שרך תאילנדי (מיקרוסוריום פטרופוס) זנב דג - Microsorum pteropus fishtail, fishtail java fern',
+            photo: ['microsorum_pteropus_fishtail'],
+            description: 'שרך נדיר מאוד',
+            price: 50,
+            discount_price: 50,
+            qty_stock: 3 // 0 is not in stock
           },
           {
             id: 'bolbitis_heudelotii',
