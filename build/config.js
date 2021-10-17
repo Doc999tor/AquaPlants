@@ -53,6 +53,15 @@ const config = {
             qty_stock: 5 // 0 is not in stock
           },
           {
+            id: 'crinum_calamistratum',
+            name: 'Crinum calamistratum - קרינום קלמיסטראטום',
+            photo: ['crinum_calamistratum_1', 'crinum_calamistratum_2', 'crinum_calamistratum_3', 'crinum_calamistratum_4'],
+            description: 'מלך של כל אק\' ללא יוצא מן הכלל. צמח דגל שכולם מכירים אבל אחדים מחזיקים. ב-Aqua Plants זה קרינומים ענקיים של יותר ממטר אורך, עשרות עלים ואין סוף אהבה\nצמח לאו-טק שלא דורש הרבה, גדל באיטיות והופך כל אקווריום ליצירת אומנות',
+            price: 120,
+            discount_price: 85,
+            qty_stock: 5 // 0 is not in stock
+          },
+          {
             id: 'cryptocoryne_wendtii',
             name: 'Cryptocoryne wendtii - קריפטוקורין וונדטי',
             photo: ['cryptocoryne_wendtii_1', 'img_4388', '20160707_083314', 'cryptocoryne_wendtii_brown_2', 'cryptocoryne_wendtii_brown_1'],
@@ -146,7 +155,7 @@ const config = {
             description: 'צמח היי-טק נדיר ומיוחד - Hygrophila sp. Tiger רק למביני עניין מהיר-גדילה, מעולה לאחורנית\nמנה אחת - 3 גבעולים בוגרים',
             price: 50,
             discount_price: 35,
-            qty_stock: 2 // 0 is not in stock
+            qty_stock: 0 // 0 is not in stock
           },
         ]
       },
