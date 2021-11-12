@@ -318,8 +318,8 @@ const config = {
             name: 'שסתום אל-חזור לצינורות אוויר ו-CO2',
             photo: ['non-return-valve'],
             description: '',
-            price: 25,
-            discount_price: 25,
+            price: 15,
+            discount_price: 15,
             qty_stock: 10 // 0 is not in stock
           },
           {
