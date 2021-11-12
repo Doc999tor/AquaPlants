@@ -281,7 +281,7 @@ const config = {
             id: 'air-pump-big',
             name: 'משאבת אוויר שקטה במיוחד',
             photo: ['air-pump-big'],
-            description: 'משאבת אוויר מעוצבת עם מנגנוני השקטה מיוחדים\nבאה עם מתאם חשמל ישראלי',
+            description: 'משאבת אוויר מעוצבת עם מנגנוני השקטה מיוחדים\nבאה עם מתאם חשמל ישראלי\nכל שנה להחליף אבן אוויר',
             price: 55,
             discount_price: 55,
             qty_stock: 1 // 0 is not in stock
@@ -290,7 +290,7 @@ const config = {
             id: 'air-pump-small',
             name: 'משאבת אוויר',
             photo: ['air-pump-small'],
-            description: '',
+            description: 'כל שנה להחליף אבן אוויר',
             price: 45,
             discount_price: 45,
             qty_stock: 2 // 0 is not in stock
@@ -299,7 +299,7 @@ const config = {
             id: 'pump',
             name: 'משאבת אוויר קטנה לאקוויריומים קטנים (עד 100 ליטר)',
             photo: ['pump'],
-            description: 'עוצמה 180 ליטר לשעה\nאפשר להחליש את הזרם המים\nפעם בכמה זמן צריך לנקות את הפתח ההנקה מעלים וקונכיות',
+            description: 'עוצמה 180 ליטר לשעה\nאפשר להחליש את זרם המים\nפעם בכמה זמן צריך לנקות את הפתח ההנקה מעלים וקונכיות',
             price: 45,
             discount_price: 45,
             qty_stock: 2 // 0 is not in stock
