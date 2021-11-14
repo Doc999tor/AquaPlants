@@ -241,6 +241,141 @@ const config = {
             discount_price: 25,
             qty_stock: 10 // 0 is not in stock
           },
+          {
+            id: 'heater-25',
+            name: 'מחמם מים לאקווריומים קטנים',
+            photo: ['heater-25'],
+            description: 'עוצמה 25W - מתאים למיכלים עד 100 ליטר\nAquaPlants ממליצים לא לחמם את המים באקווריום צמחייה יותר מ-24 מעלות מלבד מקרים מיוחדים (דברו איתנו!)\nלא להוציא מהמים כשהמחמם דלוק!',
+            price: 55,
+            discount_price: 55,
+            qty_stock: 3 // 0 is not in stock
+          },
+          {
+            id: 'heater-100',
+            name: 'מחמם מים לאקווריומים גדולים',
+            photo: ['heater-100'],
+            description: 'עוצמה 100W - מתאים למיכלים עד 300 ליטר ואפילו יותר (התחממות גלובלית 😄)\nAquaPlants ממליצים לא לחמם את המים באקווריום צמחייה יותר מ-24 מעלות מלבד מקרים מיוחדים (דברו איתנו!)\nלא להוציא מהמים כשהמחמם דלוק!',
+            price: 75,
+            discount_price: 75,
+            qty_stock: 3 // 0 is not in stock
+          },
+          {
+            id: 'filter',
+            name: 'פילטר קטן וחזק',
+            photo: ['filter'],
+            description: 'עוצמה 300 ליטר לשעה\nמתאים לאקווריומים עד 100 ליטר ואקווריומי צמחייה (100% שתילה) עד 200 ליטר\nאפשר לחבר אליו צינור אוויר (כלול בחבילה) והפילטר יזרים גם חמצן\nפעם בחודש (תלוי ברמת העומס האוגרני) צריך לשטוף את הספוג במי ברז',
+            price: 55,
+            discount_price: 55,
+            qty_stock: 3 // 0 is not in stock
+          },
+          {
+            id: 'air-filter',
+            name: 'פילטר אוויר',
+            photo: ['air-filter'],
+            description: 'פילטר מעולה לאקווריומים קטנים, יחד עם ניקוי המים מעשיר את המים בחמצן\nלהבדיל משאר הפילטרים - את הפילטר הזה אפשר לכבות מדי פעם\nכל שבועיים (במידת הצורך) יש לשטוף את הספוגים במי ברז',
+            price: 45,
+            discount_price: 45,
+            qty_stock: 4 // 0 is not in stock
+          },
+          {
+            id: 'air-pump-big',
+            name: 'משאבת אוויר שקטה במיוחד',
+            photo: ['air-pump-big'],
+            description: 'משאבת אוויר מעוצבת עם מנגנוני השקטה מיוחדים\nבאה עם מתאם חשמל ישראלי\nכל שנה להחליף אבן אוויר',
+            price: 55,
+            discount_price: 55,
+            qty_stock: 1 // 0 is not in stock
+          },
+          {
+            id: 'air-pump-small',
+            name: 'משאבת אוויר',
+            photo: ['air-pump-small'],
+            description: 'כל שנה להחליף אבן אוויר',
+            price: 45,
+            discount_price: 45,
+            qty_stock: 2 // 0 is not in stock
+          },
+          {
+            id: 'pump',
+            name: 'משאבת אוויר קטנה לאקוויריומים קטנים (עד 100 ליטר)',
+            photo: ['pump'],
+            description: 'עוצמה 180 ליטר לשעה\nאפשר להחליש את זרם המים\nפעם בכמה זמן צריך לנקות את הפתח ההנקה מעלים וקונכיות',
+            price: 45,
+            discount_price: 45,
+            qty_stock: 2 // 0 is not in stock
+          },
+          {
+            id: 'air-hose',
+            name: 'צינור אוויר ו-CO2',
+            photo: ['air-hose'],
+            description: 'צינור אוויר ו-CO2 עשוי מסיליקון\n15 שקלים למטר',
+            price: 15,
+            discount_price: 15,
+            qty_stock: 10 // 0 is not in stock
+          },
+          {
+            id: 'non-return-valve',
+            name: 'שסתום אל-חזור לצינורות אוויר ו-CO2',
+            photo: ['non-return-valve'],
+            description: '',
+            price: 15,
+            discount_price: 15,
+            qty_stock: 10 // 0 is not in stock
+          },
+          {
+            id: 'air-hose-divider',
+            name: 'מפצל צינורות אוויר וסוגר אוויר',
+            photo: ['air-hose-divider'],
+            description: 'הרבה פעמים אנחנו רוצים לתת חמצן או CO2 לכמה מיכלים קרובים, תאי רבייה או שרימסיות - המפצל הזה בא לעזור\nישנם כמה סוגים - יכ לחלק יש סוגרים',
+            price: 10,
+            discount_price: 10,
+            qty_stock: 5 // 0 is not in stock
+          },
+          {
+            id: 'bubble-counter',
+            name: 'מונה בועות CO2',
+            photo: ['bubble-counter'],
+            description: '',
+            price: 55,
+            discount_price: 55,
+            qty_stock: 5 // 0 is not in stock
+          },
+          {
+            id: 'co2-valve',
+            name: 'מפסק חשמלי ל-CO2',
+            photo: ['co2-valve'],
+            description: 'מערכת אבטחה מאוד חשובה. אם נופל לכם החשבל (למשל כל חורף בארץ) הבלון ימשיך להזריק CO2 לאקוויריום - תוך שעה (תלוי בקצב CO2) ה-PH במים יתחיל לחצות את הסף המינימלי\nלכן חייבים לחבר מפסק חשמלי שפתוח כל עוד יש חשמל - במקרה של נפילה השסתום ייסגר ודגים יישארו בחיים',
+            price: 205,
+            discount_price: 195,
+            qty_stock: 1 // 0 is not in stock
+          },
+          {
+            id: 'filter-head',
+            name: 'מגני רשת לצינור השואב של הפילטר',
+            photo: ['filter-head'],
+            description: '',
+            price: 25,
+            discount_price: 25,
+            qty_stock: 2 // 0 is not in stock
+          },
+          {
+            id: 'filter-hose-cleaner',
+            name: 'חוטר ניקוי לצינורות של הפילטר',
+            photo: ['filter-hose-cleaner'],
+            description: '',
+            price: 45,
+            discount_price: 45,
+            qty_stock: 1 // 0 is not in stock
+          },
+          {
+            id: 'filter-net',
+            name: 'רשת לחומרים הנכנסים לפילטר',
+            photo: ['filter-net'],
+            description: 'מתי צריך רשת לפילטר: כולנו יודעים שפחם באקווריום צמחייה דבר לא מועיל ואפילו מזיק, אבל מה קורה אם אנחנו צריכים לנקות את המים מתרופה? במקרה כזה שמים את הפחם בתוך הפילטר ארוז בשקית ומוציאים אותו בקלות בסוף הטיפול התרופתי',
+            price: 25,
+            discount_price: 25,
+            qty_stock: 10 // 0 is not in stock
+          },
         ]
       }
     ],
