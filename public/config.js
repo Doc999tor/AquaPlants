@@ -7,15 +7,15 @@ const config = {
         title: 'צמחי לאו-טק',
         sub_title: 'מהירי גדילה לאקווריומים פשוטים (לאו-טק) - Fast growing Low-tech plants',
         plants: [
-          {
-            id: 'myriophyllum_aquaticum',
-            name: 'Myriophyllum mattogrossense - מיריופילום מטוגרוסנס',
-            photo: ['myriophyllum_aquaticum_1'],
-            description: 'צמח מהיר-גדילה מקסים, עם צבע ירוק-רענן, שגודל בתנאים טובים ממש מהר ויוצר סבך יפה\nמנה אחת - 3 גבעולים בוגרים',
-            price: 35,
-            discount_price: 35,
-            qty_stock: 1 // 0 is not in stock
-          },
+          // {
+          //   id: 'myriophyllum_aquaticum',
+          //   name: 'Myriophyllum mattogrossense - מיריופילום מטוגרוסנס',
+          //   photo: ['myriophyllum_aquaticum_1'],
+          //   description: 'צמח מהיר-גדילה מקסים, עם צבע ירוק-רענן, שגודל בתנאים טובים ממש מהר ויוצר סבך יפה\nמנה אחת - 3 גבעולים בוגרים',
+          //   price: 35,
+          //   discount_price: 35,
+          //   qty_stock: 1 // 0 is not in stock
+          // },
           {
             id: 'cabomba_carolineana',
             name: 'Cabomba caroliniana - קבומבה קרוליניאנה',
@@ -26,13 +26,22 @@ const config = {
             qty_stock: 0 // 0 is not in stock
           },
           {
+            id: 'sagittaria_subulata',
+            name: 'Sagittaria subulata - סגיטריה סובולטה',
+            photo: ['sagittaria_subulata_1', 'sagittaria_subulata_2'],
+            description: 'צמח דשא או לקידמה של אקווריומי לאו-טק\nמנה אחת - 3 גבעולים בוגרים',
+            price: 35,
+            discount_price: 35,
+            qty_stock: 15 // 0 is not in stock
+          },
+          {
             id: 'vallisneria-spiralis',
             name: 'Vallisneria spiralis - וולסנריה מסולסלת',
             photo: ['vallisneria-spiralis'],
             description: 'צמח גבוה אם גדל בצפיפות, מהיר-גדילה, מתפשט מהר לצדדים ויוצר ג\'ונגל מאוד מרשים\nמעולה ללאו-טק, לא מחייב דישון, CO2 או תאורה חזקה\nמנה אחת - 3 גבעולים בוגרים',
             price: 35,
             discount_price: 15,
-            qty_stock: 10 // 0 is not in stock
+            qty_stock: 1 // 0 is not in stock
           },
           {
             id: 'marsilea',
@@ -41,16 +50,16 @@ const config = {
             description: 'מלכת הדשאים בלאו-טק ובכל אקווריום אחר! מתפשטת בצורה איטית אבל כובשת את שטח התחתית\nיוצרת דשא בצבע ירוק-כהה, שונה מכל המתחרים שלה. הדשא היחיד שמתפתח יפה גם בתנאי לאו-טק. שווה בכל אקווריום\nמנה אחת - שטיחון 5*5סמ\'',
             price: 50,
             discount_price: 45,
-            qty_stock: 3 // 0 is not in stock
+            qty_stock: 1 // 0 is not in stock
           },
           {
-            id: 'sagittaria_subulata',
-            name: 'Sagittaria subulata - סגיטריה סובולטה',
-            photo: ['sagittaria_subulata_1', 'sagittaria_subulata_2'],
-            description: 'צמח דשא או לקידמה של אקווריומי לאו-טק\nמנה אחת - 3 גבעולים בוגרים',
-            price: 35,
+            id: 'cryptocoryne_pontederiifolia',
+            name: 'Cryptocoryne pontederifolia - קריפטוקורין פונטדריפוליה',
+            photo: ['cryptocoryne_pontederiifolia_1', 'cryptocoryne_pontederiifolia_2', 'cryptocoryne_pontederiifolia_3'],
+            description: 'צמח יפה מאוד, גדול עלים ורחבים (סקלרים אוהבים להטיל עליהם), אחרי תקופת ההסתגלות מתפשט מאוד מהר לעומת קריפטו אחרים',
+            price: 50,
             discount_price: 35,
-            qty_stock: 5 // 0 is not in stock
+            qty_stock: 10 // 0 is not in stock
           },
           {
             id: 'crinum_calamistratum',
@@ -77,15 +86,6 @@ const config = {
             description: 'קריפטוקורין הכי יפה בעיניי, מלך של קריפטוקוריונים\nצמח גבוה עם עלים צרים מסולסלים בקצוות\nלאו-טק, מתאים למיכלים גדולים',
             price: 60,
             discount_price: 50,
-            qty_stock: 10 // 0 is not in stock
-          },
-          {
-            id: 'cryptocoryne_pontederiifolia',
-            name: 'Cryptocoryne pontederifolia - קריפטוקורין פונטדריפוליה',
-            photo: ['cryptocoryne_pontederiifolia_1', 'cryptocoryne_pontederiifolia_2', 'cryptocoryne_pontederiifolia_3'],
-            description: 'צמח יפה מאוד, גדול עלים ורחבים (סקלרים אוהבים להטיל עליהם), אחרי תקופת ההסתגלות מתפשט מאוד מהר לעומת קריפטו אחרים',
-            price: 50,
-            discount_price: 45,
             qty_stock: 10 // 0 is not in stock
           },
           {
@@ -119,7 +119,7 @@ const config = {
             description: 'מיריופילום יפה מאוד, עם גבעול אדום ועלים ירוקים\nמנה אחת - 3 גבעולים בוגרים',
             price: 45,
             discount_price: 35,
-            qty_stock: 5 // 0 is not in stock
+            qty_stock: 2 // 0 is not in stock
           },
           {
             id: 'didiplis-diandra',
@@ -128,7 +128,7 @@ const config = {
             description: 'צמח מהיר-גדילה מקסים\nמתאים לעיצוב של אחורית וצדדים של האק\'\nדורש תאורה טובה\nמנה אחת - 3 גבעולים בוגרים',
             price: 45,
             discount_price: 35,
-            qty_stock: 3 // 0 is not in stock
+            qty_stock: 0 // 0 is not in stock
           },
           {
             id: 'cyperus_helferi',
@@ -145,51 +145,24 @@ const config = {
             photo: ['echinodorus-latifolius-1', 'echinodorus-latifolius-2'],
             description: 'צמח לקידמת האק\' (רמה מתקדמת - היי-טק)\nמנה אחת - 3 גבעולים בוגרים',
             price: 10,
-            discount_price: 10,
-            qty_stock: 30 // 0 is not in stock
-          },
-          {
-            id: 'hygrophila_tiger',
-            name: 'היגרופליה טייגר - Hygrophila sp. Tiger',
-            photo: ['hygrophila_tiger_1', 'hygrophila_tiger_2', 'hygrophila_tiger_3'],
-            description: 'צמח היי-טק נדיר ומיוחד - Hygrophila sp. Tiger רק למביני עניין מהיר-גדילה, מעולה לאחורנית\nמנה אחת - 3 גבעולים בוגרים',
-            price: 50,
             discount_price: 35,
             qty_stock: 0 // 0 is not in stock
           },
+          // {
+          //   id: 'hygrophila_tiger',
+          //   name: 'היגרופליה טייגר - Hygrophila sp. Tiger',
+          //   photo: ['hygrophila_tiger_1', 'hygrophila_tiger_2', 'hygrophila_tiger_3'],
+          //   description: 'צמח היי-טק נדיר ומיוחד - Hygrophila sp. Tiger רק למביני עניין מהיר-גדילה, מעולה לאחורנית\nמנה אחת - 3 גבעולים בוגרים',
+          //   price: 50,
+          //   discount_price: 35,
+          //   qty_stock: 0 // 0 is not in stock
+          // },
         ]
       },
       {
         title: 'מוסים (טחבים) ושרכים',
         sub_title: 'מוסים ושרכים הם אבני בניין של כל אקווריום צמחייה או אקווה סקייפ. רובם לא דורשים תנאים מיוחדים, יכולים לגדול בכל צנצנצ מים נקיים. מתשמשים בהם הרבה כדי לעצב תוואי שטח, להסתיר ציוד, בתור מצע לשרימסים והטלת דגי חתול',
         plants: [
-          {
-            id: 'vesicularia_dubyana',
-            name: 'ג\'אווה מוס - Java moss (Vesicularia dubyana)',
-            photo: ['vesicularia_dubyana'],
-            description: 'מוס הכי אהוב על ידי אקווה סקייפרים, מקבל כל צורה שתתנו לו, יוצר מרבד ירוק קהה מרשים\nצמח שהכי קל לגדל, גדל בכיף בכל צנצנת מים',
-            price: 35,
-            discount_price: 35,
-            qty_stock: 2 // 0 is not in stock
-          },
-          {
-            id: 'monosolenium_tenerum',
-            name: 'פליה - Pelia - Monosolenium tenerum',
-            photo: ['monosolenium_tenerum_1', 'monosolenium_tenerum_2', ],
-            description: 'מוס שונה במראה מכל המוסים הרגילים, בולט בצורה מרשימה על פני ג\'ווה מוס - מאוד כדאי לשלב אותם ביחד עם כמה שרכים\nגם לאו-טק, גדל בכיף בכל צנצנת מים',
-            price: 35,
-            discount_price: 35,
-            qty_stock: 2 // 0 is not in stock
-          },
-          {
-            id: 'microsorum_pteropus_windelov',
-            name: 'שרך תאילנדי (מיקרוסוריום פטרופוס) ווינדלוב - Microsorum pteropus Windelov, Windelov java fern',
-            photo: ['microsorum_pteropus_windelov'],
-            description: '',
-            price: 35,
-            discount_price: 35,
-            qty_stock: 3 // 0 is not in stock
-          },
           {
             id: 'microsorum_pteropus_narrow_leaf',
             name: 'שרך תאילנדי (מיקרוסוריום פטרופוס) - Microsorum pteropus \'Narrow Leaf\'',
@@ -222,9 +195,36 @@ const config = {
             name: 'בולביטיס הודלוטי - Bolbitis heudelotii (African water fern, Congo fern)',
             photo: ['bolbitis_heudelotii_3', 'bolbitis_heudelotii_2', 'bolbitis_heudelotii_1', ],
             description: '',
-            price: 50,
-            discount_price: 50,
+            price: 55,
+            discount_price: 55,
             qty_stock: 3 // 0 is not in stock
+          },
+          {
+            id: 'microsorum_pteropus_windelov',
+            name: 'שרך תאילנדי (מיקרוסוריום פטרופוס) ווינדלוב - Microsorum pteropus Windelov, Windelov java fern',
+            photo: ['microsorum_pteropus_windelov'],
+            description: '',
+            price: 35,
+            discount_price: 35,
+            qty_stock: 0 // 0 is not in stock
+          },
+          {
+            id: 'vesicularia_dubyana',
+            name: 'ג\'אווה מוס - Java moss (Vesicularia dubyana)',
+            photo: ['vesicularia_dubyana'],
+            description: 'מוס הכי אהוב על ידי אקווה סקייפרים, מקבל כל צורה שתתנו לו, יוצר מרבד ירוק קהה מרשים\nצמח שהכי קל לגדל, גדל בכיף בכל צנצנת מים',
+            price: 35,
+            discount_price: 35,
+            qty_stock: 0 // 0 is not in stock
+          },
+          {
+            id: 'monosolenium_tenerum',
+            name: 'פליה - Pelia - Monosolenium tenerum',
+            photo: ['monosolenium_tenerum_1', 'monosolenium_tenerum_2', ],
+            description: 'מוס שונה במראה מכל המוסים הרגילים, בולט בצורה מרשימה על פני ג\'ווה מוס - מאוד כדאי לשלב אותם ביחד עם כמה שרכים\nגם לאו-טק, גדל בכיף בכל צנצנת מים',
+            price: 35,
+            discount_price: 35,
+            qty_stock: 0 // 0 is not in stock
           },
         ]
       },
@@ -242,22 +242,13 @@ const config = {
             qty_stock: 10 // 0 is not in stock
           },
           {
-            id: 'heater-25',
-            name: 'מחמם מים לאקווריומים קטנים',
-            photo: ['heater-25'],
-            description: 'עוצמה 25W - מתאים למיכלים עד 100 ליטר\nAquaPlants ממליצים לא לחמם את המים באקווריום צמחייה יותר מ-24 מעלות מלבד מקרים מיוחדים (דברו איתנו!)\nלא להוציא מהמים כשהמחמם דלוק!',
-            price: 55,
-            discount_price: 55,
-            qty_stock: 3 // 0 is not in stock
-          },
-          {
-            id: 'heater-100',
-            name: 'מחמם מים לאקווריומים גדולים',
-            photo: ['heater-100'],
-            description: 'עוצמה 100W - מתאים למיכלים עד 300 ליטר ואפילו יותר (התחממות גלובלית 😄)\nAquaPlants ממליצים לא לחמם את המים באקווריום צמחייה יותר מ-24 מעלות מלבד מקרים מיוחדים (דברו איתנו!)\nלא להוציא מהמים כשהמחמם דלוק!',
-            price: 75,
-            discount_price: 75,
-            qty_stock: 3 // 0 is not in stock
+            id: 'no-planaria',
+            name: 'NO-Planaria - תרופה לטיפול בפלנריה והידרה',
+            photo: ['no-planaria'],
+            description: 'תרופה ידועה לטיפול בפלנריה והידרה\nמינון: ביום הראשון של הטיפול שמים כפית לכל 50 ליטר, ביום השני - חצי כפית 50 ליטר, יום שלישי - רבע כפית. אחרי שבועיים אפשר לחזור לחזור על הטיפול. אחרי כל טיפול חובה להחליף 50% מים כמה ימים ברצף\nהתרופה בדרך כלל לא פוגעת בדגים, שרימפס וצמחים\nרעיל! יש להרחיק מילדים ומבעלי חיים\nאחרי הטיפול כדאי להשתמש בפילטר פחם שיש ל-AquaPlants, שמים אותו בשקית מיוחדת שמאפשרת זרימת מים\nמנה אחת מספיקה לטיפול באקווריום של 50 ליטר',
+            price: 45,
+            discount_price: 45,
+            qty_stock: 2 // 0 is not in stock
           },
           {
             id: 'filter',
@@ -312,6 +303,24 @@ const config = {
             price: 15,
             discount_price: 15,
             qty_stock: 10 // 0 is not in stock
+          },
+          {
+            id: 'air-stone-big',
+            name: 'אבן אוויר גדולה',
+            photo: ['air-stone-big'],
+            description: 'כל שנה כדאי להחליף אבן אוויר',
+            price: 15,
+            discount_price: 20,
+            qty_stock: 8 // 0 is not in stock
+          },
+          {
+            id: 'air-stone-small',
+            name: 'אבן אוויר קטנה',
+            photo: ['air-stone-small'],
+            description: 'כל שנה כדאי להחליף אבן אוויר',
+            price: 15,
+            discount_price: 15,
+            qty_stock: 8 // 0 is not in stock
           },
           {
             id: 'non-return-valve',
@@ -374,6 +383,42 @@ const config = {
             description: 'מתי צריך רשת לפילטר: כולנו יודעים שפחם באקווריום צמחייה דבר לא מועיל ואפילו מזיק, אבל מה קורה אם אנחנו צריכים לנקות את המים מתרופה? במקרה כזה שמים את הפחם בתוך הפילטר ארוז בשקית ומוציאים אותו בקלות בסוף הטיפול התרופתי',
             price: 25,
             discount_price: 25,
+            qty_stock: 10 // 0 is not in stock
+          },
+          {
+            id: 'filter-bio-balls',
+            name: 'כדורי ביו-סינון לפילטר',
+            photo: ['filter-bio-balls'],
+            description: '100 bio-balls עם שטח פנים ענק אבל מאפשרים גם זרימה טובה של מים שלא קוראת עם כדורי או טבעות מדיה אחרים. שמים אותם בפילטר חיצוני ושוטפים במים פעם בחצי שנה\nאפשר לשים אותם גם כמסיס CO2 כמו ב-Aqua Medic 1000',
+            price: 85,
+            discount_price: 85,
+            qty_stock: 1 // 0 is not in stock
+          },
+          {
+            id: 'heater-25',
+            name: 'מחמם מים לאקווריומים קטנים',
+            photo: ['heater-25'],
+            description: 'עוצמה 25W - מתאים למיכלים עד 100 ליטר\nAquaPlants ממליצים לא לחמם את המים באקווריום צמחייה יותר מ-24 מעלות מלבד מקרים מיוחדים (דברו איתנו!)\nלא להוציא מהמים כשהמחמם דלוק!',
+            price: 55,
+            discount_price: 55,
+            qty_stock: 3 // 0 is not in stock
+          },
+          {
+            id: 'heater-100',
+            name: 'מחמם מים לאקווריומים גדולים',
+            photo: ['heater-100'],
+            description: 'עוצמה 100W - מתאים למיכלים עד 300 ליטר ואפילו יותר (התחממות גלובלית 😄)\nAquaPlants ממליצים לא לחמם את המים באקווריום צמחייה יותר מ-24 מעלות מלבד מקרים מיוחדים (דברו איתנו!)\nלא להוציא מהמים כשהמחמם דלוק!',
+            price: 75,
+            discount_price: 75,
+            qty_stock: 3 // 0 is not in stock
+          },
+          {
+            id: 'vermiculite',
+            name: 'ורמיקוליט',
+            photo: ['vermiculite'],
+            description: 'חומר מצוין להכנת מצע מדושן DIY (עשה זאת בעצמך)\nאיך משתמשים בו: מכינים תמיסה רוויה/מרוכזת של דשני מקרו ומיקרו, שמים ורמיקוליט בתוך הנוזל ומשאירים ללילה, ואז שמים כשכבה תחתונה של המצע\nורמיקוליט הולך לשחרר את הדשנים ישר לשורשים למשך תקופה ארוכה\n1 ליטר ב-15 שקלים',
+            price: 15,
+            discount_price: 15,
             qty_stock: 10 // 0 is not in stock
           },
         ]
