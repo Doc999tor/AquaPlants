@@ -31,7 +31,7 @@ const config = {
             photo: ['sagittaria_subulata_1', 'sagittaria_subulata_2'],
             description: 'צמח דשא או לקידמה של אקווריומי לאו-טק\nמנה אחת - 3 גבעולים בוגרים',
             price: 35,
-            discount_price: 35,
+            discount_price: 30,
             qty_stock: 15 // 0 is not in stock
           },
           {
@@ -40,7 +40,7 @@ const config = {
             photo: ['vallisneria-spiralis'],
             description: 'צמח גבוה אם גדל בצפיפות, מהיר-גדילה, מתפשט מהר לצדדים ויוצר ג\'ונגל מאוד מרשים\nמעולה ללאו-טק, לא מחייב דישון, CO2 או תאורה חזקה\nמנה אחת - 3 גבעולים בוגרים',
             price: 35,
-            discount_price: 15,
+            discount_price: 35,
             qty_stock: 1 // 0 is not in stock
           },
           {
@@ -65,10 +65,11 @@ const config = {
             id: 'crinum_calamistratum',
             name: 'Crinum calamistratum - קרינום קלמיסטראטום',
             photo: ['crinum_calamistratum_1', 'crinum_calamistratum_2', 'crinum_calamistratum_3', 'crinum_calamistratum_4'],
-            description: 'מלך של כל אק\' ללא יוצא מן הכלל. צמח דגל שכולם מכירים אבל אחדים מחזיקים. ב-Aqua Plants זה קרינומים ענקיים של יותר ממטר אורך, עשרות עלים ואין סוף אהבה\nצמח לאו-טק שלא דורש הרבה, גדל באיטיות והופך כל אקווריום ליצירת אומנות',
+            description: 'מלך של כל אק\' ללא יוצא מן הכלל. צמח דגל שכולם מכירים אבל אחדים מחזיקים\nצמח לאו-טק שלא דורש הרבה, גדל באיטיות והופך כל אקווריום ליצירת אומנות\nהצמח קטן יותר מהתמונה, גובה כ-50 סמ\', סביבות 5 עלים',
+            // description: 'מלך של כל אק\' ללא יוצא מן הכלל. צמח דגל שכולם מכירים אבל אחדים מחזיקים. ב-Aqua Plants זה קרינומים ענקיים של יותר ממטר אורך, עשרות עלים ואין סוף אהבה\nצמח לאו-טק שלא דורש הרבה, גדל באיטיות והופך כל אקווריום ליצירת אומנות',
             price: 120,
-            discount_price: 85,
-            qty_stock: 5 // 0 is not in stock
+            discount_price: 50,
+            qty_stock: 1 // 0 is not in stock
           },
           {
             id: 'cryptocoryne_wendtii',
@@ -77,6 +78,15 @@ const config = {
             description: 'צמח אדום-חום קלאסי ללאו-טק, איטי-גדילה, מתפשט קצב איטי',
             price: 45,
             discount_price: 45,
+            qty_stock: 3 // 0 is not in stock
+          },
+          {
+            id: 'cryptocoryne_lutea',
+            name: 'Cryptocoryne lutea - קריפטוקורין לוטאה',
+            photo: ['cryptocoryne_lutea_1'],
+            description: 'קריפטוקורין קלאסי ללאו-טק, איטי-גדילה, מתפשט קצב איטי',
+            price: 45,
+            discount_price: 40,
             qty_stock: 3 // 0 is not in stock
           },
           {
@@ -95,7 +105,7 @@ const config = {
             description: 'רוטלה אינדיקה זה צמח גבעול אהוב מאוד על ידי מתחילים, לא דורש תנאים מיוחדים, גודל יפה מאוד בכל אקווריום\nאבל על מנת להפיק ממנו מקסימום - בתנאי מיד-טק לא תזהו את הרוטלה, זה יהיה צמח אחר למרי: אדום, עם עלים חזקים, שיוצר סבך בפן האחורי\nמנה אחת - 3 גבעולים בוגרים',
             price: 35,
             discount_price: 35,
-            qty_stock: 3 // 0 is not in stock
+            qty_stock: 2 // 0 is not in stock
           },
         ]
       },
@@ -119,7 +129,7 @@ const config = {
             description: 'מיריופילום יפה מאוד, עם גבעול אדום ועלים ירוקים\nמנה אחת - 3 גבעולים בוגרים',
             price: 45,
             discount_price: 35,
-            qty_stock: 2 // 0 is not in stock
+            qty_stock: 0 // 0 is not in stock
           },
           {
             id: 'didiplis-diandra',
@@ -200,19 +210,19 @@ const config = {
             qty_stock: 3 // 0 is not in stock
           },
           {
-            id: 'microsorum_pteropus_windelov',
-            name: 'שרך תאילנדי (מיקרוסוריום פטרופוס) ווינדלוב - Microsorum pteropus Windelov, Windelov java fern',
-            photo: ['microsorum_pteropus_windelov'],
-            description: '',
-            price: 35,
-            discount_price: 35,
-            qty_stock: 0 // 0 is not in stock
-          },
-          {
             id: 'vesicularia_dubyana',
             name: 'ג\'אווה מוס - Java moss (Vesicularia dubyana)',
             photo: ['vesicularia_dubyana'],
             description: 'מוס הכי אהוב על ידי אקווה סקייפרים, מקבל כל צורה שתתנו לו, יוצר מרבד ירוק קהה מרשים\nצמח שהכי קל לגדל, גדל בכיף בכל צנצנת מים',
+            price: 35,
+            discount_price: 35,
+            qty_stock: 1 // 0 is not in stock
+          },
+          {
+            id: 'microsorum_pteropus_windelov',
+            name: 'שרך תאילנדי (מיקרוסוריום פטרופוס) ווינדלוב - Microsorum pteropus Windelov, Windelov java fern',
+            photo: ['microsorum_pteropus_windelov'],
+            description: '',
             price: 35,
             discount_price: 35,
             qty_stock: 0 // 0 is not in stock
