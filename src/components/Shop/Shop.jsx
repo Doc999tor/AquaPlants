@@ -19,7 +19,7 @@ const Shop = ({ onAddToCart, itemsId = [], onIncrementCartItem, onDecrementCartI
             </section>
             : config.data.plants_categories?.map(i => (
               <section key={i.title}>
-                <h3 className={s.Category}>{i?.title}</h3>
+                <h3 className={s.Category} id={i?.title}>{i?.title} <a href={'#' + i?.title} className={s.anchor_link}>#</a></h3>
                 <p className={s.About}>{i?.sub_title}</p>
                 <div className={s.Products}>
                   {i?.plants?.map(i => <Item onIncrementCartItem={onIncrementCartItem} onDecrementCartItem={onDecrementCartItem} onAddToCart={onAddToCart} key={i.id} i={i} itemsId={itemsId} />)}

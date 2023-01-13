@@ -49,3 +49,6 @@
         width: 70%;
     }
 }
+
+.anchor_link { color: transparent; text-decoration: none; }
+.anchor_link:hover { color: #ddd; transition: color .2s ease-in-out; }
