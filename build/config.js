@@ -62,15 +62,15 @@ const config = {
             discount_price: 45,
             qty_stock: 3 // 0 is not in stock
           },
-          {
-            id: 'cryptocoryne_lutea',
-            name: 'Cryptocoryne lutea - קריפטוקורין לוטאה',
-            photo: ['cryptocoryne_lutea_1'],
-            description: 'קריפטוקורין קלאסי ללאו-טק, איטי-גדילה, מתפשט קצב איטי',
-            price: 45,
-            discount_price: 40,
-            qty_stock: 3 // 0 is not in stock
-          },
+          // {
+          //   id: 'cryptocoryne_lutea',
+          //   name: 'Cryptocoryne lutea - קריפטוקורין לוטאה',
+          //   photo: ['cryptocoryne_lutea_1'],
+          //   description: 'קריפטוקורין קלאסי ללאו-טק, איטי-גדילה, מתפשט קצב איטי',
+          //   price: 45,
+          //   discount_price: 40,
+          //   qty_stock: 3 // 0 is not in stock
+          // },
           {
             id: 'cryptocoryne_crispatula_var_balansae',
             name: 'Cryptocoryne crispatula var. balansae',
@@ -182,24 +182,24 @@ const config = {
             discount_price: 35,
             qty_stock: 5 // 0 is not in stock
           },
-          {
-            id: 'microsorum_pteropus_trident',
-            name: 'שרך תאילנדי (מיקרוסוריום פטרופוס) טריידנט - Microsorum pteropus Trident, Trident java fern',
-            photo: ['microsorum_pteropus_trident'],
-            description: '',
-            price: 35,
-            discount_price: 35,
-            qty_stock: 5 // 0 is not in stock
-          },
-          {
-            id: 'microsorum_pteropus_fishtail',
-            name: 'שרך תאילנדי (מיקרוסוריום פטרופוס) זנב דג - Microsorum pteropus fishtail, fishtail java fern',
-            photo: ['microsorum_pteropus_fishtail'],
-            description: 'שרך מיוחד ונדיר מאוד',
-            price: 50,
-            discount_price: 50,
-            qty_stock: 3 // 0 is not in stock
-          },
+          // {
+          //   id: 'microsorum_pteropus_trident',
+          //   name: 'שרך תאילנדי (מיקרוסוריום פטרופוס) טריידנט - Microsorum pteropus Trident, Trident java fern',
+          //   photo: ['microsorum_pteropus_trident'],
+          //   description: '',
+          //   price: 35,
+          //   discount_price: 35,
+          //   qty_stock: 5 // 0 is not in stock
+          // },
+          // {
+          //   id: 'microsorum_pteropus_fishtail',
+          //   name: 'שרך תאילנדי (מיקרוסוריום פטרופוס) זנב דג - Microsorum pteropus fishtail, fishtail java fern',
+          //   photo: ['microsorum_pteropus_fishtail'],
+          //   description: 'שרך מיוחד ונדיר מאוד',
+          //   price: 50,
+          //   discount_price: 50,
+          //   qty_stock: 3 // 0 is not in stock
+          // },
           {
             id: 'bolbitis_heudelotii',
             name: 'בולביטיס הודלוטי - Bolbitis heudelotii (African water fern, Congo fern)',
