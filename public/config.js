@@ -53,15 +53,15 @@ const config = {
             discount_price: 50,
             qty_stock: 0 // 0 is not in stock
           },
-          {
-            id: 'cryptocoryne_wendtii',
-            name: 'Cryptocoryne wendtii - קריפטוקורין וונדטי',
-            photo: ['cryptocoryne_wendtii_1', 'img_4388', '20160707_083314', 'cryptocoryne_wendtii_brown_2', 'cryptocoryne_wendtii_brown_1'],
-            description: 'צמח אדום-חום קלאסי ללאו-טק, איטי-גדילה, מתפשט קצב איטי',
-            price: 45,
-            discount_price: 45,
-            qty_stock: 3 // 0 is not in stock
-          },
+          // {
+          //   id: 'cryptocoryne_wendtii',
+          //   name: 'Cryptocoryne wendtii - קריפטוקורין וונדטי',
+          //   photo: ['cryptocoryne_wendtii_1', 'img_4388', '20160707_083314', 'cryptocoryne_wendtii_brown_2', 'cryptocoryne_wendtii_brown_1'],
+          //   description: 'צמח אדום-חום קלאסי ללאו-טק, איטי-גדילה, מתפשט קצב איטי',
+          //   price: 45,
+          //   discount_price: 45,
+          //   qty_stock: 0 // 0 is not in stock
+          // },
           // {
           //   id: 'cryptocoryne_lutea',
           //   name: 'Cryptocoryne lutea - קריפטוקורין לוטאה',
@@ -219,6 +219,24 @@ const config = {
             qty_stock: 1 // 0 is not in stock
           },
           {
+            id: 'weeping_moss',
+            name: 'Weeping Moss (Vesicularia Ferriei)',
+            photo: ['weeping_moss'],
+            description: 'מוס מיוחד ומאוד מוכר בזכות צורת גדילה שלו - ענפים שלו יורדים למטה כמו ערבה בוכייה או אקליפטוס\nמוס זה עמיד וידידותי למתחילים שיגדל במגוון של פרמטרים ותנאי תאורה',
+            price: 45,
+            discount_price: 45,
+            qty_stock: 1 // 0 is not in stock
+          },
+          {
+            id: 'fissidens_fontanus',
+            name: 'Phoenix Moss - Fissidens Fontanus',
+            photo: ['fissidens_fontanus'],
+            description: 'מוס מפואר, בצדק נחשב למוס הכי יפה ומיוחד בכל aqua scape\nנותן קלילות ונפח שאי-אפשר לקבל עם שום צמח אחר\nמשתלב מצוין עם כל מוס קהה כמו ג\'אווה מוס',
+            price: 55,
+            discount_price: 60,
+            qty_stock: 1 // 0 is not in stock
+          },
+          {
             id: 'microsorum_pteropus_windelov',
             name: 'שרך תאילנדי (מיקרוסוריום פטרופוס) ווינדלוב - Microsorum pteropus Windelov, Windelov java fern',
             photo: ['microsorum_pteropus_windelov'],
@@ -256,9 +274,9 @@ const config = {
             name: 'NO-Planaria - תרופה לטיפול בפלנריה והידרה',
             photo: ['no-planaria'],
             description: 'תרופה ידועה לטיפול בפלנריה והידרה\nמינון: ביום הראשון של הטיפול שמים כפית לכל 50 ליטר, ביום השני - חצי כפית 50 ליטר, יום שלישי - רבע כפית. אחרי שבועיים אפשר לחזור לחזור על הטיפול. אחרי כל טיפול חובה להחליף 50% מים כמה ימים ברצף\nהתרופה בדרך כלל לא פוגעת בדגים, שרימפס וצמחים\nרעיל! יש להרחיק מילדים ומבעלי חיים\nאחרי הטיפול כדאי להשתמש בפילטר פחם שיש ל-AquaPlants, שמים אותו בשקית מיוחדת שמאפשרת זרימת מים\nמנה אחת מספיקה לטיפול באקווריום של 50 ליטר',
-            price: 45,
-            discount_price: 45,
-            qty_stock: 2 // 0 is not in stock
+            price: 145,
+            discount_price: 145,
+            qty_stock: 1 // 0 is not in stock
           },
           {
             id: 'filter',
